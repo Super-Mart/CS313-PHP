@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+#click-p,
+#clicked {
+  margin: 5px;
+}
+.section-a {
+  margin: 10px 5px;
+  padding: 10px;
+  background-color: blue;
+}
+
+.section-b {
+  margin: 10px 5px;
+  padding: 10px;
+  background-color: red;
+}
+
+.section-c {
+  margin: 10px 5px;
+  padding: 10px;
+  background-color: yellow;
+}
+
+.section-a:hover {
+  font-weight: bold;
+}
+
+.section-b:hover {
+  font-weight: bold;
+}
+
+.section-c:hover {
+  font-weight: bold;
+}
