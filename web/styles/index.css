@@ -1,4 +1,4 @@
-tml {
+html {
   height: 100%;
 }
 *,
@@ -10,7 +10,6 @@ nav {
   text-align: right;
 }
 ul {
-  padding: 0;
 }
 li {
   list-style: none;
@@ -22,12 +21,12 @@ a {
 }
 /* unvisited link */
 a:link {
-  color: black;
+  color: white;
 }
 
 /* visited link */
 a:visited {
-  color: black;
+  color: white;
 }
 
 /* mouse over link */
@@ -42,7 +41,9 @@ a:active {
 
 /* Background image */
 body .background {
-  background-image: url("../images/background_image.jpg");
+  background-image: url(https://www.barraques.cat/pngfile/big/145-1452218_minimal-cloud-4k-hd-desktop-wallpaper.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 }
