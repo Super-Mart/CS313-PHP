@@ -17,6 +17,9 @@ li {
   display: inline;
   padding: 5px;
 }
+a {
+  text-decoration: none;
+}
 /* unvisited link */
 a:link {
   color: black;
@@ -35,4 +38,11 @@ a:hover {
 /* selected link */
 a:active {
   color: yellow;
+}
+
+/* Background image */
+body .background {
+  background-image: url("../images/background_image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

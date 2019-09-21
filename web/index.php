@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./styles/index.css">
   <title>About Me</title>
 </head>
-<body>
+<body class="background">
   <?php 
     include('./common/header.php'); 
     ?>
