@@ -8,9 +8,7 @@
 </head>
 <body>
   <main>
-  <?php 
-    phpinfo 
-  ?>
+  <?php phpinfo();?>
   </main>
 </body>
 </html>
