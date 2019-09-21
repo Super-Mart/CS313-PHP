@@ -6,9 +6,9 @@
 html {
   height: 100%;
 }
-#click-p,
-#clicked {
-  margin: 5px;
+.container > button,
+.container > p {
+  margin: 5px 15px;
 }
 .section-a {
   margin: 10px 5px;

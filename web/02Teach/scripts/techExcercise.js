@@ -1,11 +1,17 @@
-function alertClicked() {
-  document.getElementById("clicked").innerHTML = "Clicked!";
+// click me fuction
+function clickMe() {
+  document.getElementById("display-message").innerHTML = "Clicked!";
 }
-
-function colorChange() {
+// section-a - change background color
+function changeColor() {
   // Selecting the input element and get its value
-  var inputVal = document.getElementById("newColor").value;
-  document.getElementById("colorChange").style.backgroundColor = inputVal;
+  var inputVal = document.getElementById("colorInput").value;
+  // Selecting section-a's id and get its value
+  document.getElementById("changeColor").style.backgroundColor = inputVal;
   // Displaying the value
   // alert(inputVal);
 }
+// use jQuery to fade out and back in section-c
+$("#faded").click(function() {
+  $(".fadeOut").fadeToggle("slow", "linear");
+});
