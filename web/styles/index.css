@@ -1,10 +1,8 @@
+* {
+  box-sizing: border-box;
+}
 html {
   height: 100%;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 nav {
   text-align: right;
@@ -17,6 +15,7 @@ li {
   list-style: none;
   display: inline;
   padding: 5px;
+  color: white;
 }
 a {
   text-decoration: none;

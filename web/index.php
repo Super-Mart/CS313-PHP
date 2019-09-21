@@ -9,9 +9,11 @@
   <title>About Me</title>
 </head>
 <body class="background">
+  <header>
   <?php 
-    include('./common/header.php'); 
+    include('./common/nav.php'); 
     ?>
+  </header>
   <main>
  
   </main>
