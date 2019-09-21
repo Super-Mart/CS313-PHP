@@ -1,7 +1,38 @@
+tml {
+  height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+nav {
+  text-align: right;
+}
 ul {
   padding: 0;
 }
 li {
   list-style: none;
-  text-align: center;
+  display: inline;
+  padding: 5px;
+}
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
 }
