@@ -8,8 +8,9 @@
 </head>
 <body>
   <main>
-
+  <? 
+    phpinfo 
+  ?>
   </main>
-
 </body>
 </html>
