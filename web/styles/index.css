@@ -4,12 +4,16 @@
 html {
   height: 100%;
 }
+body {
+  margin: 0;
+}
 nav {
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: right;
+  padding: 10px;
 }
 ul {
   margin: 0;
-  padding: 0;
 }
 li {
   list-style: none;
@@ -42,7 +46,7 @@ a:active {
 
 /* Background image */
 body .background {
-  background-image: url("https://www.barraques.cat/pngfile/big/145-1452218_minimal-cloud-4k-hd-desktop-wallpaper.jpg");
+  background-image: url("http://www.barraques.cat/pngfile/big/145-1452218_minimal-cloud-4k-hd-desktop-wallpaper.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
