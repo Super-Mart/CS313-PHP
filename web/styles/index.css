@@ -10,6 +10,8 @@ nav {
   text-align: right;
 }
 ul {
+  margin: 0;
+  padding: 0;
 }
 li {
   list-style: none;
@@ -31,17 +33,17 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: red;
+  color: #ccc;
 }
 
 /* selected link */
 a:active {
-  color: yellow;
+  color: #ccc;
 }
 
 /* Background image */
 body .background {
-  background-image: url(https://www.barraques.cat/pngfile/big/145-1452218_minimal-cloud-4k-hd-desktop-wallpaper.jpg);
+  background-image: url("https://www.barraques.cat/pngfile/big/145-1452218_minimal-cloud-4k-hd-desktop-wallpaper.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;

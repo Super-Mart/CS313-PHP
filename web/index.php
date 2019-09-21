@@ -13,9 +13,7 @@
     include('./common/header.php'); 
     ?>
   <main>
-  <?php 
-    phpinfo();
-    ?>
+ 
   </main>
 </body>
 </html>
