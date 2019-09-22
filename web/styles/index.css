@@ -46,7 +46,7 @@ a:hover {
 
 /* Background image */
 body.background {
-  background-image: url("https://wallpapercave.com/wp/wp2222396.jpg");
+  background-image: url("https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/28872075_960806887401822_7153038478370930688_n.jpg?_nc_cat=103&_nc_oc=AQkNV_sYaOoHIW2nVc2if4huUdiWOwEmwLQYXbOX4UPMJg_08Svoxh0LxQTN-7XU1yk&_nc_ht=scontent-sea1-1.xx&oh=4cc96cabfa9d8266c1689a93d61c6e2f&oe=5DFD8E05");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -55,7 +55,6 @@ body.background {
 
 .bg-text {
   color: white;
-  /* font-weight: bold; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -64,6 +63,7 @@ body.background {
   width: 80%;
   padding: 20px;
   text-align: center;
+  line-height: 10px;
   /* background-color: rgba(9, 15, 29, 0.3); */
 }
 
