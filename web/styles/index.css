@@ -70,3 +70,8 @@ body.background {
 .bg-text h1 {
   font-size: 3em;
 }
+p > a {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+}

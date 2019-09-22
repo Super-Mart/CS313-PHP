@@ -17,7 +17,8 @@
   <main>
     <section class="bg-text">
       <h1>I am Erik</h1>
-      <p>And I'm a Programmer</p>
+      <h2>And I'm a Programmer</h2>
+      <p><a href="./hello.html">Assignment Portal</a></p>
     </section>
   </main>
 </body>
