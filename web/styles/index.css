@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 nav {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   text-align: right;
   padding: 10px;
 }
@@ -39,13 +39,13 @@ a:visited {
 a:hover {
   color: #ccc;
 }
-a.active {
+/* a.active {
   background-color: black;
   padding: 5px 10px 20px;
-}
+} */
 /* Background image */
 body.background {
-  background-image: url("https://www.barraques.cat/pngfile/big/145-1452218_minimal-cloud-4k-hd-desktop-wallpaper.jpg");
+  background-image: url("https://wallpapercave.com/wp/wp2222396.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
