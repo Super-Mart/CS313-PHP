@@ -20,6 +20,7 @@ li {
   display: inline;
   padding: 5px;
   color: white;
+  font-size: 1.2em;
 }
 a {
   text-decoration: none;
@@ -38,15 +39,14 @@ a:visited {
 a:hover {
   color: #ccc;
 }
-
-/* selected link */
-a:active {
-  color: #ccc;
+a.active {
+  background-color: black;
+  width: 100%;
+  padding: 5px 10px 20px;
 }
-
 /* Background image */
-body .background {
-  background-image: url("http://www.barraques.cat/pngfile/big/145-1452218_minimal-cloud-4k-hd-desktop-wallpaper.jpg");
+body.background {
+  background-image: url("https://www.barraques.cat/pngfile/big/145-1452218_minimal-cloud-4k-hd-desktop-wallpaper.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
