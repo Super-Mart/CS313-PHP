@@ -15,7 +15,12 @@
     ?>
   </header>
   <main>
- 
+    <section>
+      <h1>I am Erik</h1>
+      <div class="typewriter">
+        <p>And I'm a Programmer</p>
+      </div>
+    </section>
   </main>
 </body>
 </html>
