@@ -11,7 +11,7 @@
 <body class="background">
   <header>
   <?php 
-    include('./common/nav.php'); 
+    //include('./common/nav.php'); 
     ?>
   </header>
   <main>
