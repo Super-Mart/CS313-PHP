@@ -53,7 +53,7 @@ body.background {
   background-size: cover;
 }
 
-.bd-text {
+.bg-text {
   color: white;
   font-weight: bold;
   position: absolute;
@@ -66,11 +66,11 @@ body.background {
   text-align: center;
   background-color: rgba(9, 15, 29, 0.3);
 }
-.typewriter {
+/* .typewriter {
   display: flex;
   justify-content: center;
-}
-.typewriter p {
+} */
+.bg-text p {
   color: #fff;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */

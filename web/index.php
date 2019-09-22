@@ -15,11 +15,9 @@
     ?>
   </header>
   <main>
-    <section>
+    <section class="bg-text">
       <h1>I am Erik</h1>
-      <div class="typewriter">
-        <p>And I'm a Programmer</p>
-      </div>
+      <p>And I'm a Programmer</p>
     </section>
   </main>
 </body>
