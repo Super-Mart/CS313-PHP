@@ -1,77 +1,75 @@
-* {
+/* Border box reset */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 html {
   height: 100%;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 body {
-  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
-nav {
-  background-color: rgba(9, 15, 29, 0.4);
-  text-align: right;
-  padding: 10px;
+header,
+section {
+  height: 100vh;
+  width: 100vw;
 }
-ul {
-  margin: 0;
-}
-li {
-  list-style: none;
-  display: inline;
-  padding: 5px;
-  color: white;
-  font-size: 1.2em;
+
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0 0 1.5rem 0;
 }
 a {
   text-decoration: none;
+  color: #13a7fb;
 }
-/* unvisited link */
-a:link {
+/* site-header */
+.site-header {
   color: white;
-}
-
-/* visited link */
-a:visited {
-  color: white;
-}
-
-/* mouse over link */
-a:hover {
-  color: #ccc;
-}
-/* a.active {
-  background-color: black;
-  padding: 5px 10px 20px;
-} */
-
-/* Background image */
-body.background {
-  background-image: url("https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/28872075_960806887401822_7153038478370930688_n.jpg?_nc_cat=103&_nc_oc=AQkNV_sYaOoHIW2nVc2if4huUdiWOwEmwLQYXbOX4UPMJg_08Svoxh0LxQTN-7XU1yk&_nc_ht=scontent-sea1-1.xx&oh=4cc96cabfa9d8266c1689a93d61c6e2f&oe=5DFD8E05");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-}
-
-.bg-text {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
   text-align: center;
-  line-height: 10px;
-  /* background-color: rgba(9, 15, 29, 0.3); */
+  background: linear-gradient(to bottom right, #292c33, #393d47);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(80vh - 60px);
 }
-
-.bg-text h1 {
+.site-header h1 {
   font-size: 3em;
 }
-p > a {
+.site-header p {
+  font-size: 1.1rem;
+  margin: 2.5rem 0;
+  padding: 20px;
+}
+.primary {
+  color: #57eea1;
+}
+.underline a {
+  display: inline-block;
+}
+.underline > a:hover {
+  text-decoration: underline;
+}
+a.button {
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem 1.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: inline-block;
+  margin: 10px;
+}
+a.button:hover {
+  color: white;
   border: 1px solid white;
-  padding: 10px;
-  border-radius: 10px;
 }

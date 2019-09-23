@@ -6,20 +6,101 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Erik Martinez">
   <link rel="stylesheet" href="./styles/index.css">
-  <title>About Me</title>
+  <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans|Poppins&display=swap"
+      rel="stylesheet"
+    />
+  <title>Erik Martinez - About Me</title>
 </head>
-<body class="background">
-  <header>
-  <?php 
-    //include('./common/nav.php'); 
-    ?>
-  </header>
-  <main>
-    <section class="bg-text">
-      <h1>I am Erik</h1>
-      <h2>And I'm a Programmer</h2>
-      <p><a href="./hello.html">Assignment Portal</a></p>
-    </section>
-  </main>
-</body>
+<body>
+    <main>
+      <header class="site-header">
+        <div class="small-container">
+          <div class="about">
+            <h1>
+              <span class="primary">Full-Stack Developer</span>
+            </h1>
+            <p class="underline">
+              Hi, I'm <span class="name">Erik!</span> I love porgramming and am
+              currenly persuing to be a
+              <a
+                href="https://hackernoon.com/6-essential-tips-on-how-to-become-a-full-stack-developer-1d10965aaead"
+                >Full-Stack developer.</a
+              >
+            </p>
+            <p>
+              <a class="button button-secondary" href="#assignment_portal"
+                >Assignment Portal</a
+              >
+              <a class="button button-secondary" href="">My Github</a>
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <section class="section alt-bg" id="skills">
+        <header class="section-header">
+          <div class="small-container">
+            <h2>Technical Skills</h2>
+            <p>
+              I specialize in front end development and design, with knowledge
+              in system administration and back end development.
+            </p>
+          </div>
+        </header>
+        <div class="container">
+          <div class="flex skills">
+            <div class="card">
+              <img src="img/html.png" alt="HTML5 Logo" />
+              <h3>HTML</h3>
+            </div>
+            <div class="card">
+              <img src="img/css.png" alt="CSS3 Shield" />
+              <h3>CSS</h3>
+            </div>
+            <div class="card">
+              <img src="img/sass.png" alt="Sass Logo" />
+              <h3>Sass</h3>
+            </div>
+            <div class="card">
+              <img src="img/js.png" alt="JavaScript Logo" />
+              <h3>JavaScript</h3>
+            </div>
+            <div class="card">
+              <img src="img/node.png" alt="Node.js Logo" />
+              <h3>Node.js</h3>
+            </div>
+            <div class="card">
+              <img src="img/php.png" alt="PHP Logo" />
+              <h3>PHP</h3>
+            </div>
+            <div class="card">
+              <img src="img/terminal.png" alt="Terminal Image" />
+              <h3>Command Line</h3>
+            </div>
+            <div class="card">
+              <img src="img/git.png" alt="Git Logo" />
+              <h3>Git</h3>
+            </div>
+            <div class="card">
+              <img src="img/wp.png" alt="Git Logo" />
+              <h3>WordPress</h3>
+            </div>
+            <div class="card">
+              <img src="img/aws.png" alt="Git Logo" />
+              <h3>AWS</h3>
+            </div>
+            <div class="card">
+              <img src="img/gulp.png" alt="Git Logo" />
+              <h3>Automation</h3>
+            </div>
+            <div class="card">
+              <img src="img/linux.png" alt="Git Logo" />
+              <h3>Linux</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
