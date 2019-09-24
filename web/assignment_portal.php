@@ -33,7 +33,7 @@
               <a class="button button-secondary" href="../week1/hello.php"
                 >Week 1</a
               >
-              <a class="button button-secondary" href="">Week 2</a>
+              <a class="button button-secondary" href="../week1/w2teamactivity.php">Week 2</a>
             </p>
           </div>
         </div>
