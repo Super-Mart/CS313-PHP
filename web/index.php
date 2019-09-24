@@ -30,7 +30,7 @@
               >
             </p>
             <p>
-              <a class="button button-secondary" href="#assignment_portal"
+              <a class="button button-secondary" href="../week1/hello.php"
                 >Assignment Portal</a
               >
               <a class="button button-secondary" href="">My Github</a>
