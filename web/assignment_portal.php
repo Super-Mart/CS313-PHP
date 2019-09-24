@@ -19,21 +19,21 @@
         <div class="small-container">
           <div class="about">
             <h1>
-              <span class="primary">Full-Stack Developer</span>
+              <span class="primary">Assignment Portal</span>
             </h1>
-            <p class="underline">
+            <!-- <p class="underline">
               Hi, I'm <span class="name">Erik!</span> I love porgramming and am
               currenly persuing to be a
               <a
                 href="https://hackernoon.com/6-essential-tips-on-how-to-become-a-full-stack-developer-1d10965aaead"
                 >Full-Stack developer.</a
               >
-            </p>
+            </p> -->
             <p>
               <a class="button button-secondary" href="../week1/hello.php"
-                >Assignment Portal</a
+                >Week 1</a
               >
-              <a class="button button-secondary" href="">My Github</a>
+              <a class="button button-secondary" href="">Week 2</a>
             </p>
           </div>
         </div>
