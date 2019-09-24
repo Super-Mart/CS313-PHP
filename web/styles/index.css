@@ -16,11 +16,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
-header,
 section {
   height: 90vh;
 }
-
 h1,
 h2 {
   font-family: "Nunito Sans", sans-serif;
@@ -91,7 +89,39 @@ a.button:hover {
   font-size: 1.1rem;
   margin: 2.5rem 0;
   padding: 20px;
+  color: #858787;
 }
+.container,
+.small-container {
+  max-width: 1050px;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  padding: 2.5rem;
+  background: #fff;
+  border: 1px solid #ebecec;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem;
+}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.skills {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 @media screen and (min-width: 650px) {
   h1 {
     font-size: 4rem;
@@ -101,5 +131,13 @@ a.button:hover {
   }
   .section-header {
     margin-bottom: 4rem;
+  }
+  .section-header p {
+    font-size: 1.1rem;
+  }
+  .skills .card {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 calc(25% - 1rem);
+    flex: 1 1 calc(25% - 1rem);
   }
 }
