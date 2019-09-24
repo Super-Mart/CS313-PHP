@@ -18,19 +18,21 @@ body {
 }
 header,
 section {
-  height: 100vh;
-  width: 100vw;
+  height: 90vh;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
   margin: 0 0 1.5rem 0;
 }
 a {
   text-decoration: none;
   color: #13a7fb;
 }
-/* site-header */
+/* Site-Header */
 .site-header {
   color: white;
   text-align: center;
@@ -72,4 +74,32 @@ a.button {
 a.button:hover {
   color: white;
   border: 1px solid white;
+}
+
+/* Technical Section */
+.section {
+  padding: 2rem 0;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.section-header h2 {
+  font-size: 2.5em;
+}
+.section-header p {
+  font-size: 1.1rem;
+  margin: 2.5rem 0;
+  padding: 20px;
+}
+@media screen and (min-width: 650px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .section {
+    padding: 4rem 0;
+  }
+  .section-header {
+    margin-bottom: 4rem;
+  }
 }
