@@ -52,51 +52,27 @@
         <div class="container">
           <div class="flex skills">
             <div class="card">
-              <img src="img/html.png" alt="HTML5 Logo" />
+              <img src="./images/html.png" alt="HTML5 Logo" />
               <h3>HTML</h3>
             </div>
             <div class="card">
-              <img src="img/css.png" alt="CSS3 Shield" />
+              <img src="./images/css.png" alt="CSS3 Shield" />
               <h3>CSS</h3>
-            </div>
+            </div>           
             <div class="card">
-              <img src="img/sass.png" alt="Sass Logo" />
-              <h3>Sass</h3>
-            </div>
-            <div class="card">
-              <img src="img/js.png" alt="JavaScript Logo" />
+              <img src="./images/js.png" alt="JavaScript Logo" />
               <h3>JavaScript</h3>
-            </div>
+            </div> 
             <div class="card">
-              <img src="img/node.png" alt="Node.js Logo" />
-              <h3>Node.js</h3>
-            </div>
-            <div class="card">
-              <img src="img/php.png" alt="PHP Logo" />
+              <img src="./images/php.png" alt="PHP Logo" />
               <h3>PHP</h3>
             </div>
             <div class="card">
-              <img src="img/terminal.png" alt="Terminal Image" />
-              <h3>Command Line</h3>
-            </div>
-            <div class="card">
-              <img src="img/git.png" alt="Git Logo" />
+              <img src="./images/git.png" alt="Git Logo" />
               <h3>Git</h3>
             </div>
             <div class="card">
-              <img src="img/wp.png" alt="Git Logo" />
-              <h3>WordPress</h3>
-            </div>
-            <div class="card">
-              <img src="img/aws.png" alt="Git Logo" />
-              <h3>AWS</h3>
-            </div>
-            <div class="card">
-              <img src="img/gulp.png" alt="Git Logo" />
-              <h3>Automation</h3>
-            </div>
-            <div class="card">
-              <img src="img/linux.png" alt="Git Logo" />
+              <img src="./images/linux.png" alt="Git Logo" />
               <h3>Linux</h3>
             </div>
           </div>
