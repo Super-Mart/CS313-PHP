@@ -47,6 +47,7 @@ a {
   font-size: 1.1rem;
   margin: 2.5rem 0;
   padding: 20px;
+  max-width: 650px;
 }
 .primary {
   color: #57eea1;
@@ -87,9 +88,10 @@ a.button:hover {
 }
 .section-header p {
   font-size: 1.1rem;
-  margin: 2.5rem 0;
+  margin: 0 auto;
   padding: 20px;
   color: #858787;
+  max-width: 650px;
 }
 .container,
 .small-container {
