@@ -63,8 +63,16 @@
               <h3>JavaScript</h3>
             </div> 
             <div class="card">
+              <img src="./images/ts.png" alt="TypeScript Logo" />
+              <h3>TypeScript</h3>
+            </div> 
+            <div class="card">
               <img src="./images/angular.png" alt="Angular Logo" />
               <h3>Angular</h3>
+            </div>   
+            <div class="card">
+              <img src="./images/php.png" alt="PHP Logo" />
+              <h3>PHP</h3>
             </div>
             <div class="card">
               <img src="./images/microsoft-sql-server.png" alt="Microsoft SQL Server Logo" />
@@ -73,10 +81,6 @@
             <div class="card">
               <img src="./images/mysql.png" alt="MySQL Logo" />
               <h3>MySQL</h3>
-            </div>
-            <div class="card">
-              <img src="./images/php.png" alt="PHP Logo" />
-              <h3>PHP</h3>
             </div>
             <div class="card">
               <img src="./images/git.png" alt="Git Logo" />
