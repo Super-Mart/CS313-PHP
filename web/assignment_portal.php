@@ -42,16 +42,16 @@
       <section class="section alt-bg" id="skills">
         <header class="section-header">
           <div class="small-container">
-            <h2>Technical Skills</h2>
+            <!-- <h2>Technical Skills</h2>
             <p>
               I specialize in front end development and design, with knowledge
               in system administration and back end development.
-            </p>
+            </p> -->
           </div>
         </header>
         <div class="container">
           <div class="flex skills">
-            <div class="card">
+            <!-- <div class="card">
               <img src="img/html.png" alt="HTML5 Logo" />
               <h3>HTML</h3>
             </div>
@@ -99,7 +99,7 @@
               <img src="img/linux.png" alt="Git Logo" />
               <h3>Linux</h3>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
