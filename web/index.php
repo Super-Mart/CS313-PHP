@@ -94,5 +94,6 @@
         </div>
       </section>
     </main>
+    <?php include('./common/footer.php'); ?>
   </body>
 </html>

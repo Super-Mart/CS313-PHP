@@ -37,7 +37,7 @@
       <section class="section alt-bg" id="skills">
         <header class="section-header">
           <div class="small-container">
-            <h2>assignments</h2>
+            <h2>Assignments</h2>
             <!-- <p>
               I specialize in front end development and design, with knowledge
               in system administration and back end development.
@@ -100,5 +100,7 @@
         </div>
       </section>
     </main>
+    <?php include('./common/footer.php'); ?>
+
   </body>
 </html>

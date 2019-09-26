@@ -16,9 +16,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
-section {
+/* section {
   height: 100vh;
-}
+} */
 h1,
 h2 {
   font-family: "Nunito Sans", sans-serif;
@@ -140,6 +140,14 @@ a.button:hover {
 img {
   height: auto;
   max-width: 100%;
+}
+
+/* footer */
+.footer-bottom {
+  text-align: center;
+  padding: 2rem 0;
+  background: linear-gradient(to bottom right, #292c33, #393d47);
+  color: white;
 }
 
 @media screen and (min-width: 650px) {
