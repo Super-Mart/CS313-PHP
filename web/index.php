@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Poppins:400,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/home.css" />
     <title>Erik Martinez - FullStack Developer</title>
   </head>
   <body>
@@ -44,8 +43,8 @@
           <div class="small-container">
             <h2>Technical Skills</h2>
             <p>
-              I specialize in front end development and design, with knowledge
-              in system administration and back end development.
+              I specialize in full stack development, with knowledge and experience
+              in the following technologies.
             </p>
           </div>
         </header>
@@ -63,6 +62,10 @@
               <img src="./images/js.png" alt="JavaScript Logo" />
               <h3>JavaScript</h3>
             </div> 
+            <div class="card">
+              <img src="./images/angular.png" alt="Angular Logo" />
+              <h3>Angular</h3>
+            </div>
             <div class="card">
               <img src="./images/php.png" alt="PHP Logo" />
               <h3>PHP</h3>
