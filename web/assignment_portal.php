@@ -21,19 +21,14 @@
             <h1>
               <span class="primary">Assignment Portal</span>
             </h1>
-            <!-- <p class="underline">
-              Hi, I'm <span class="name">Erik!</span> I love porgramming and am
-              currenly persuing to be a
-              <a
-                href="https://hackernoon.com/6-essential-tips-on-how-to-become-a-full-stack-developer-1d10965aaead"
-                >Full-Stack developer.</a
-              >
-            </p> -->
+            <p class="underline">
+             Welcome, below you will find the assignments by week.
+            </p>
             <p>
-              <a class="button button-secondary" href="../week1/hello.php"
-                >Week 1</a
+              <a class="button button-secondary" href="./index.php"
+                >Go Back</a
               >
-              <a class="button button-secondary" href="../week1/w2teamactivity.php">Week 2</a>
+              <!-- <a class="button button-secondary" href="../week1/w2teamactivity.php">Week 2</a> -->
             </p>
           </div>
         </div>
@@ -42,8 +37,8 @@
       <section class="section alt-bg" id="skills">
         <header class="section-header">
           <div class="small-container">
-            <!-- <h2>Technical Skills</h2>
-            <p>
+            <h2>assignments</h2>
+            <!-- <p>
               I specialize in front end development and design, with knowledge
               in system administration and back end development.
             </p> -->
@@ -51,11 +46,13 @@
         </header>
         <div class="container">
           <div class="flex skills">
-            <!-- <div class="card">
-              <img src="img/html.png" alt="HTML5 Logo" />
-              <h3>HTML</h3>
-            </div>
             <div class="card">
+              <a href="../week1/hello.php">
+                <img src="img/html.png" alt="HTML5 Logo" />
+                <h3>HTML</h3>
+              </a>
+            </div>
+            <!--<div class="card">
               <img src="img/css.png" alt="CSS3 Shield" />
               <h3>CSS</h3>
             </div>
