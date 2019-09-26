@@ -48,8 +48,8 @@
           <div class="flex skills">
             <div class="card">
               <a href="../week1/hello.php">
-                <img src="img/html.png" alt="HTML5 Logo" />
-                <h3>HTML</h3>
+                <img src="./images/assignment.png" alt="Assignment Logo" />
+                <h3>Week 1</h3>
               </a>
             </div>
             <!--<div class="card">
