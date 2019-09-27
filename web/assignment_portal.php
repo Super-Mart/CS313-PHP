@@ -53,7 +53,7 @@
               </a>
             </div>
                 <div class="card">
-              <a href="../team_assignments/03Teach/index.html">
+              <a href="../team_assignments/03Teach/index.php">
                 <img src="./images/assignment.png" alt="Assignment Logo" />
                 <h3>Week 3 Team Assignment</h3>
               </a>
