@@ -7,9 +7,19 @@
     <title>Result</title>
 </head>
 <body>
-    <p> Welcome <?php echo $_POST["name"]; ?></p> <br>
-    <p> Your email address is:<?php echo $_POST["email"]; ?></p>
-    <p> Your Major is: <?php echo $_POST["major"]; ?> </p>
-    <p> Your Comment: <?php echo $_POST["comments"]; ?> </p>
+<?php
+
+// name attribute of the input field goes inside the 
+// square brackets of $_GET superglobal
+$name = $_GET["name"];
+$email = $_GET["email"];
+
+echo "Your name is ". $name . " and you are ". $email . " years old".
+
+?>
+    <p> Welcome <?php echo $_GET["name"]; ?></p>
+    <p> Your email address is:<?php echo $_GET["email"]; ?></p>
+    <p> Your Major is: <?php echo $_GET["major"]; ?> </p>
+    <p> Your Comment: <?php echo $_GET["comments"]; ?> </p>
 </body>
 </html>

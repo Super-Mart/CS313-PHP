@@ -14,7 +14,7 @@
     <title>Form Handling</title>
   </head>
   <body>
-    <form action="welcome_get.php" method="post" class="container">
+    <form method="get" action="welcome_get.php" class="container">
       <section>
         <label for="name">Enter your name: </label>
         <input type="text" name="name" id="name" required />
