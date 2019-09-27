@@ -15,3 +15,7 @@ function changeColor() {
 $("#faded").click(function() {
   $(".fadeOut").fadeToggle("slow", "linear");
 });
+
+$("#colorButton").click(function() {
+  $("#changeColor").css("background-color", $("#colorInput").val);
+});
