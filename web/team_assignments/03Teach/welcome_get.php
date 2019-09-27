@@ -8,7 +8,7 @@
 </head>
 <body>
     <p> Welcome <?php echo $_GET["name"]; ?></p> <br>
-    <p> Your email address is: <a href="mailto:<?php echo $_GET["email"]; ?>"><?php echo $_GET["email"]; ?></p>
+    <p> Your email address is:<?php echo $_GET["email"]; ?></p>
     <p> Your Major is: <?php echo $_GET["major"]; ?> </p>
     <p> Your Comment: <?php echo $_GET["comments"]; ?> </p>
 </body>
