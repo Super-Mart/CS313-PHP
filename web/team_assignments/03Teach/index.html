@@ -17,10 +17,10 @@
     <form method="post" action="welcome_post.php" class="container">
       <section>
         <label for="name">Enter your name: </label>
-        <input type="text" name="name" required />
+        <input type="text" name="name" placeholder="Ato" required />
 
         <label for="email">Enter your email: </label>
-        <input type="email" name="email" required />
+        <input type="email" name="email" placeholder="Ato@gmail.com" required />
       </section>
 
       <section>
@@ -30,7 +30,7 @@
           <label for="major">Computer Science</label>
         </div>
         <div>
-          <input type="radio" name="major" />
+          <input type="radio" name="major" checked />
           <label for="major">Web Design and Development </label>
         </div>
         <div>
@@ -43,29 +43,39 @@
         </div>
 
         <div>
-          <textarea name="comments"></textarea>
+          <textarea name="comments">HI</textarea>
         </div>
       </section>
       <section>
         <p>Place you have visted</p>
         <div>
-          <input type="checkbox" name="visted[]" value="North America" />
+          <input
+            type="checkbox"
+            name="visted[]"
+            value="North America"
+            checked
+          />
           <label for="visted">North America</label>
         </div>
         <div>
-          <input type="checkbox" name="visted[]" value="South America" />
+          <input
+            type="checkbox"
+            name="visted[]"
+            value="South America"
+            checked
+          />
           <label for="visted">South America</label>
         </div>
         <div>
-          <input type="checkbox" name="visted[]" value="Europe" />
+          <input type="checkbox" name="visted[]" value="Europe" checked />
           <label for="visted">Europe</label>
         </div>
         <div>
-          <input type="checkbox" name="visted[]" value="Asia" />
+          <input type="checkbox" name="visted[]" value="Asia" checked />
           <label for="visted">Asia</label>
         </div>
         <div>
-          <input type="checkbox" name="visted[]" value="Australia" />
+          <input type="checkbox" name="visted[]" value="Australia" checked />
           <label for="visted">Australia</label>
         </div>
 

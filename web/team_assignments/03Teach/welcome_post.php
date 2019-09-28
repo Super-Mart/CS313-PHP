@@ -19,7 +19,7 @@
     echo "<a href='mailto:" . $email . "'>Your Email</a><br>";
     echo "Your major is: ". $major ."<br>";
     echo "Your posted comment: ". $comments ."<br>";
-    echo "Places you have visited: <br>"
+    echo "Places you have visited: <br>";
      foreach ($visted as $visit){
         echo $visit . ", ";
     }    
