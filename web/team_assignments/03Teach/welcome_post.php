@@ -17,10 +17,11 @@
    
     echo "<p>Hi, ". $name . "</p>";
     echo "<a href='mailto:" . $email . "'>Your Email</a><br>";
-    echo "Your major is: ". $major ."<br>";
-    echo "Your posted comment: ". $comments ."<br>";
+    echo "<p>Your major is: ". $major ."</p><br>";
+    echo "<p>Your posted comment: ". $comments ."</p><br>";
+    echo "<p>Places you have visited: </p><br>"
      foreach ($visted as $visit){
-        echo "Places you have visited:". $visit . "<br>";
+        echo $visit . "<br>";
     }    
     ?>
 
