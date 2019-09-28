@@ -17,9 +17,6 @@ $email = $_POST["email"];
 echo "Your name is ". $name . " and you are ". $email . " years old".
 
 ?>
-    <p> Welcome <?php echo $_POST["name"]; ?></p>
-    <p> Your email address is:<?php echo $_POST["email"]; ?></p>
-    <p> Your Major is: <?php echo $_POST["major"]; ?> </p>
-    <p> Your Comment: <?php echo $_POST["comments"]; ?> </p>
+    
 </body>
 </html>
