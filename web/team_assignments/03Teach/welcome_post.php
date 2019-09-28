@@ -14,11 +14,14 @@
     $major = $_POST["major"];
     $comments = $_POST["comments"];
     $visted = $_POST["visted"];
+   
     echo "<p>Hi, ". $name . "</p>";
     echo "<a href='mailto:" . $email . "'>Your Email</a><br>";
     echo "Your major is: ". $major ."<br>";
     echo "Your posted comment: ". $comments ."<br>";
-    echo "Places you have visited: ". $visted;    
+     foreach ($visted as $visit){
+        echo "Places you have visited:". $visit . "<br>";
+    }    
     ?>
 
 </body>
