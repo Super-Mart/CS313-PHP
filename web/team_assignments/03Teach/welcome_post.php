@@ -15,7 +15,7 @@
     $comments = $_POST["comments"];
 
     echo "<p>Hi, ". $name . "</p><br>";
-    echo "Your email address: ". $email ."<br>";
+    echo "<a href='mailto:" . $email . "'>Your Email</a><br>";
     echo "Your major is: ". $major ."<br>";
     echo "Your posted comment: ". $comments ."<br>";
 
