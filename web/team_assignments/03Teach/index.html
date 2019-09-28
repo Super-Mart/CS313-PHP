@@ -17,10 +17,10 @@
     <form method="post" action="welcome_post.php" class="container">
       <section>
         <label for="name">Enter your name: </label>
-        <input type="text" name="name" id="name" required />
+        <input type="text" name="name" required />
 
         <label for="email">Enter your email: </label>
-        <input type="email" name="email" id="email" required />
+        <input type="email" name="email" required />
       </section>
 
       <section>
@@ -45,6 +45,7 @@
           <textarea name="comments"></textarea>
         </div>
       </section>
+      <input type="hidden" name="form_submitted" value="1" />
       <input type="submit" value="Submit" />
     </form>
   </body>
