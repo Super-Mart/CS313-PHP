@@ -14,7 +14,7 @@
     $major = $_POST["major"];
     $comments = $_POST["comments"];
 
-    echo "Hi, ". $name . "<br>";
+    echo "<p>Hi, ". $name . "</p><br>";
     echo "Your email address: ". $email ."<br>";
     echo "Your major is: ". $major ."<br>";
     echo "Your posted comment: ". $comments ."<br>";
