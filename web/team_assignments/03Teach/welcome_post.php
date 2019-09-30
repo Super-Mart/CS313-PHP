@@ -16,13 +16,13 @@
     $visted = $_POST["visted"];
    
     echo "<p>Hi, ". $name . "</p>";
-    echo "<p>Your Email is: <a href='mailto:" . $email . "'>". $email . "</a></p><br>";
-    echo "Your major is: ";
+    echo "<p>Your Email is: <a href='mailto:" . $email . "'>". $email . "</a></p>";
+    echo "<p>Your major is: ";
     foreach ($major as $majors){
-        echo $majors. "<br>";
+        echo $majors. "</p>";
     }   
-    echo "Your posted comment: ". $comments ."<br>";
-    echo "Places you have visited: <br>";
+    echo "<p>Your posted comment: ". $comments ."</p>";
+    echo "<p>Places you have visited: </p>";
      foreach ($visted as $visit){
         echo $visit . ", ";
     }    
