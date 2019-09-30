@@ -25,7 +25,16 @@
 
       <section>
         <p>Select your major:</p>
-        <div>
+      <?php
+        $majors = array("Computer Science"=>"CS", "Web Design and Development"=>"WDD",
+                "Computer information Technology"=>"CIT", "Computer Engineering"=>"CE");
+
+        foreach($majors as $x => $x_value) {
+                  echo "<div><input type='radio' name='major' value=" . $x_value . "/>" .  $x . "</div>";
+                     echo "<br>";
+        }
+        ?>
+        <!-- <div>
           <input type="radio" name="major[]" value="Computer Science" />
           <label for="major">Computer Science</label>
         </div>
@@ -40,7 +49,7 @@
         <div>
           <input type="radio" name="major[]" value="Computer Engineering" />
           <label for="major">Computer Engineering</label>
-        </div>
+        </div> -->
 
         <div>
           <textarea name="comments">HI</textarea>
