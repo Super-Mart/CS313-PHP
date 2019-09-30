@@ -26,19 +26,19 @@
       <section>
         <p>Select your major:</p>
         <div>
-          <input type="radio" name="major" />
+          <input type="radio" name="major[]" value="Computer Science" />
           <label for="major">Computer Science</label>
         </div>
         <div>
-          <input type="radio" name="major" checked />
+          <input type="radio" name="major[]" value="Web Design and Development" checked />
           <label for="major">Web Design and Development </label>
         </div>
         <div>
-          <input type="radio" name="major" />
+          <input type="radio" name="major[]" value="Computer information Technology" />
           <label for="major">Computer information Technology</label>
         </div>
         <div>
-          <input type="radio" name="major" />
+          <input type="radio" name="major[]" value="Computer Engineering" />
           <label for="major">Computer Engineering</label>
         </div>
 

@@ -16,8 +16,11 @@
     $visted = $_POST["visted"];
    
     echo "<p>Hi, ". $name . "</p>";
-    echo "<a href='mailto:" . $email . "'>Your Email</a><br>";
-    echo "Your major is: ". $major ."<br>";
+    echo "<a href='mailto:" . $email . "'>Your Email is:". $email . "</a><br>";
+    echo "Your major is: ";
+    foreach ($major as $majors){
+        echo $majors;
+    }   
     echo "Your posted comment: ". $comments ."<br>";
     echo "Places you have visited: <br>";
      foreach ($visted as $visit){
