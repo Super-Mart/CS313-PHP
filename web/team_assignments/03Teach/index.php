@@ -30,7 +30,7 @@
                 "Computer information Technology"=>"CIT", "Computer Engineering"=>"CE");
 
         foreach($majors as $x => $x_value) {
-                  echo "<div><input type='radio' name='major' value=" . $x_value . "/>" .  $x . "</div>";
+                  echo "<div><input type='radio' name='major' value=" . $x_value . "\/>" .  $x . "</div>";
                      echo "<br>";
         }
         ?>
