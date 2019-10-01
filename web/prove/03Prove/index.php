@@ -1,64 +1,32 @@
+<?php
+
+require 'start.php'
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="/css/main.css">
     <title>Phony</title>
-    <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-      html {
-        height: 100%;
-      }
-      /* ul {
-        list-style: none;
-        padding-left: 0;
-      } */
-      figcaption {
-        text-align: center;
-      }
-      img {
-        max-width: 200px;
-      }
-      .grid-container {
-        display: grid;
-        justify-items: center;
-      }
-
-      /* .product-description {
-        align-self: center;
-      } */
-      .grid-item {
-        display: flex;
-        flex-direction: column;
-      }
-      @media only screen and (min-width: 600px) {
-        .grid-container {
-          grid-template-columns: repeat(2, 1fr);
-          margin: 0;
-          justify-items: center;
-        }
-      }
-      @media only screen and (min-width: 1000px) {
-        .grid-container {
-          grid-template-columns: repeat(2, 1fr);
-          margin: 0;
-          justify-items: center;
-        }
-        .grid-item {
-          /* flex-direction: row; */
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-    </style>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="order.php">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
+      <h1>PHONY</h1>
       <div class="grid-container">
         <div class="grid-item">
           <figure>
