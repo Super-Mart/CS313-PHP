@@ -65,7 +65,7 @@
               </a>
             </div>
             <div class="card">
-              <a href="./prove/test/simple-php-shopping-cart/index.php">
+              <a href="./prove/test/php-shopping-cart-without-database/index.php">
                 <img src="./images/assignment.png" alt="Assignment Logo" />
                 <h3>Week 3 - Shopping Assignment</h3>
               </a>
