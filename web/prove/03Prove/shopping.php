@@ -65,8 +65,6 @@ require 'start.php'
 for ($i=0; $i< count($products); $i++) {
 ?>
 <tr>
-  <td><?php echo(" <img src='" . $images[$i]. "' alt='samsung s10' />"); ?></td>
-  <td width="10px">&nbsp;</td>
   <td><?php echo($products[$i]); ?></td>
   <td width="10px">&nbsp;</td>
   <td><?php echo($amounts[$i]); ?></td>
