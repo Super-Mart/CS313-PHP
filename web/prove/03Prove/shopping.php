@@ -72,17 +72,10 @@ for ($i=0; $i< count($products); $i++) {
 
 
 </tr>
-
-
-
-<?php
-}
-?>
-
 </table>
 
 
-<a href="order.php"<button type="button" class="btn-sm btn-primary">Order Cart</button></a>
+<a href="order.php"><button type="button" class="btn-sm btn-primary">Order Cart</button></a>
 <p></p>
 <footer class="col-md-12">
 Copyright 2017
