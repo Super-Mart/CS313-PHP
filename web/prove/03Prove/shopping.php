@@ -11,7 +11,7 @@ require 'start.php'
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/myStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
     <nav class="navbar navbar-inverse">
@@ -82,7 +82,7 @@ for ($i=0; $i< count($products); $i++) {
 </table>
 
 
-<a href="order.php"><button type="button" class="btn-sm btn-primary">Order Cart</button></a>
+<a href="order.php"<button type="button" class="btn-sm btn-primary">Order Cart</button></a>
 <p></p>
 <footer class="col-md-12">
 Copyright 2017
