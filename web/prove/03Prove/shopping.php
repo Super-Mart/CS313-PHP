@@ -9,17 +9,25 @@ require 'start.php'
     <title>Shopping Cart</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/myStyle.css">
   </head>
   <body>
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CS 313</a>
+        </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a>
+          </li>
           <li><a href="shopping.php">Shopping Cart</a>
         </li>
         <li>
@@ -44,7 +52,6 @@ require 'start.php'
 <h1>Shopping Cart</h1>
 </div>
 <h2>List of All Products</h2>
-
 <table>
 <tr>
   <th>Product</th>
@@ -57,12 +64,10 @@ require 'start.php'
 for ($i=0; $i< count($products); $i++) {
 ?>
 <tr>
-
   <td><?php echo($products[$i]); ?></td>
   <td width="10px">&nbsp;</td>
   <td><?php echo($amounts[$i]); ?></td>
   <td width="10px">&nbsp;</td>
-
   <td><a href="?add=<?php echo($i); ?>"><button type="button" class="btn-sm btn-warning">Add</button></a></td>
 
 
@@ -78,8 +83,9 @@ for ($i=0; $i< count($products); $i++) {
 
 
 <a href="order.php"><button type="button" class="btn-sm btn-primary">Order Cart</button></a>
-<footer>
-  <p>Footer Coming Soon</p>
+<p></p>
+<footer class="col-md-12">
+Copyright 2017
 </footer>
 </body>
 </html>
