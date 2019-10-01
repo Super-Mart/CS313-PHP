@@ -70,6 +70,10 @@ for ($i=0; $i< count($products); $i++) {
   <td width="10px">&nbsp;</td>
   <td><a href="?add=<?php echo($i); ?>"><button type="button" class="btn-sm btn-warning">Add</button></a></td>
 </tr>
+<?php
+}
+?>
+
 </table>
 
 
