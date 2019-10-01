@@ -15,30 +15,13 @@ require 'start.php'
   </head>
   <body>
     <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">CS 313</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a>
-          </li>
-          <li><a href="shopping.php">Shopping Cart</a>
+      <div class="container-fluid">        
+        <div class="collapse navbar-collapse" id="myNavbar">         
+        <li>
+          <a href="shopping.php">Shopping Cart</a>
         </li>
         <li>
           <a href="order.php">Order Form</a>
-        </li>
-
-        <li>
-          <a href="checkout.php">Check Out</a>
-        </li>
-        <li>
-          <a href="confirm.php">Payment</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -51,7 +34,7 @@ require 'start.php'
 <div id="shoppingBanner" class="jumbotron">
 <h1>Shopping Cart</h1>
 </div>
-<h2>List of All Products</h2>
+<h2>All Products</h2>
 <table>
 <tr>
   <th>Product</th>
@@ -74,10 +57,11 @@ for ($i=0; $i< count($products); $i++) {
 <?php
 }
 ?>
+
 <?php 
 $cards = array("samsungs10", "samsungs10", "samsungs10", "samsungs10", "samsungs10", "samsungs10");
 foreach ($cards as $card) {
-    echo "<img src='/images/$card.jpg'> <br>";
+    echo "<img src='./images/$card.jpg'> <br>";
 }?>
 </table>
 
