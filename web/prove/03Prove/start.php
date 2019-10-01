@@ -1,10 +1,11 @@
 <?php session_start();
 
 //Define the products and cost
-$products = array("Camera", "SD-Card", "Pen Drive", "Tablet", "Laptop", "Cellphone");
-$amounts = array("799.99", "9.99", "14.99", "499.99", "899.99", "699.99");
-
- if ( !isset($_SESSION["total"]) ) {
+$products = array("Samsung Galaxy S10", "Samsung Galaxy S10", "Samsung Galaxy S10", "Samsung Galaxy S10", "Samsung Galaxy S10", "Samsung Galaxy S10");
+$amounts = array("949.99", "949.99", "949.99", "949.99", "949.99", "949.99");
+$images = array("./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg")
+ 
+if ( !isset($_SESSION["total"]) ) {
 
    $_SESSION["total"] = 0;
    for ($i=0; $i< count($products); $i++) {
