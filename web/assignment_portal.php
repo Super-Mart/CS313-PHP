@@ -47,62 +47,23 @@
         <div class="container">
           <div class="flex skills">
             <div class="card">
-              <a href="../week1/hello.php">
+              <a href="./prove/01Prove/hello.php">
                 <img src="./images/assignment.png" alt="Assignment Logo" />
-                <h3>Week 1</h3>
+                <h3>Week 1 Solo Assignment</h3>
               </a>
             </div>
                 <div class="card">
-              <a href="../team_assignments/03Teach/index.php">
+              <a href="./team_assignments/03Teach/index.php">
                 <img src="./images/assignment.png" alt="Assignment Logo" />
                 <h3>Week 3 Team Assignment</h3>
               </a>
             </div>
-            <!--<div class="card">
-              <img src="img/css.png" alt="CSS3 Shield" />
-              <h3>CSS</h3>
-            </div>
             <div class="card">
-              <img src="img/sass.png" alt="Sass Logo" />
-              <h3>Sass</h3>
+              <a href="./prove/03Prove/shopping.php">
+                <img src="./images/assignment.png" alt="Assignment Logo" />
+                <h3>Week 3 - Shopping Assignment</h3>
+              </a>
             </div>
-            <div class="card">
-              <img src="img/js.png" alt="JavaScript Logo" />
-              <h3>JavaScript</h3>
-            </div>
-            <div class="card">
-              <img src="img/node.png" alt="Node.js Logo" />
-              <h3>Node.js</h3>
-            </div>
-            <div class="card">
-              <img src="img/php.png" alt="PHP Logo" />
-              <h3>PHP</h3>
-            </div>
-            <div class="card">
-              <img src="img/terminal.png" alt="Terminal Image" />
-              <h3>Command Line</h3>
-            </div>
-            <div class="card">
-              <img src="img/git.png" alt="Git Logo" />
-              <h3>Git</h3>
-            </div>
-            <div class="card">
-              <img src="img/wp.png" alt="Git Logo" />
-              <h3>WordPress</h3>
-            </div>
-            <div class="card">
-              <img src="img/aws.png" alt="Git Logo" />
-              <h3>AWS</h3>
-            </div>
-            <div class="card">
-              <img src="img/gulp.png" alt="Git Logo" />
-              <h3>Automation</h3>
-            </div>
-            <div class="card">
-              <img src="img/linux.png" alt="Git Logo" />
-              <h3>Linux</h3>
-            </div>
-          </div> -->
         </div>
       </section>
     </main>

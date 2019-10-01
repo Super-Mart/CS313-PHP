@@ -17,7 +17,7 @@
    
     echo "<p>Hi, ". $name . "</p>";
     echo "<p>Your Email is: <a href='mailto:" . $email . "'>". $email . "</a></p>";
-    echo "<p>Your major is: " . $major;
+    echo "<p>Your major will be in: " . $major;
     // foreach ($major as $majors){
     //     echo $majors. "</p>";
     // }   
