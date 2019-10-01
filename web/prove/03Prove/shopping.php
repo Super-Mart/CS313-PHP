@@ -74,6 +74,11 @@ for ($i=0; $i< count($products); $i++) {
 <?php
 }
 ?>
+<?php 
+$cards = array("samsungs10", "samsungs10", "samsungs10", "samsungs10", "samsungs10", "samsungs10");
+foreach ($cards as $card) {
+    echo "<img src='/images/$card.jpg'> <br>";
+}?>
 </table>
 
 
