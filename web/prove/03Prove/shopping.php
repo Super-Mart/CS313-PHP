@@ -9,8 +9,8 @@ require 'start.php'
     <title>Shopping Cart</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
@@ -60,10 +60,13 @@ require 'start.php'
   <th width="10px">&nbsp;</th>
   <th>Action</th>
 </tr>
+
 <?php
 for ($i=0; $i< count($products); $i++) {
 ?>
 <tr>
+  <td><?php echo(" <img src='" . $images[$i]. "' alt='samsung s10' />"); ?></td>
+  <td width="10px">&nbsp;</td>
   <td><?php echo($products[$i]); ?></td>
   <td width="10px">&nbsp;</td>
   <td><?php echo($amounts[$i]); ?></td>
@@ -73,14 +76,13 @@ for ($i=0; $i< count($products); $i++) {
 <?php
 }
 ?>
-
 </table>
 
 
 <a href="order.php"><button type="button" class="btn-sm btn-primary">Order Cart</button></a>
 <p></p>
-<footer class="col-md-12">
-Copyright 2017
+<footer>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 </footer>
 </body>
 </html>

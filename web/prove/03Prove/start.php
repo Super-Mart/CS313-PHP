@@ -3,7 +3,7 @@
 //Define the products and cost
 $products = array("Samsung Galaxy S10", "Samsung Galaxy S10", "Samsung Galaxy S10", "Samsung Galaxy S10", "Samsung Galaxy S10", "Samsung Galaxy S10");
 $amounts = array("949.99", "949.99", "949.99", "949.99", "949.99", "949.99");
-// $images = array("./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg")
+$images = array("./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg")
  
 if ( !isset($_SESSION["total"]) ) {
 
