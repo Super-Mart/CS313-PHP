@@ -29,9 +29,9 @@ require 'start.php'
 			</div>
 		</div>
 	</nav>
-	<div id="shoppingBanner" class="jumbotron">
-		<h1>Check Out Page</h1>
-	</div>
+
+	<h1>Check Out Page</h1>
+
 	<?php
 	if (isset($_SESSION["cart"])) {
 		?>
@@ -64,17 +64,20 @@ require 'start.php'
 				?>
 			<tr>
 				<td colspan="7">Total : <?php echo ($total); ?></td>
-				</POST </table> <?php
-								}
-								?> <table>
-			<tr>
-				<td colspan="5"><a href="confirm.php"><button type="button" class="btn-sm btn-danger">Pay</button></a></td>
 			</tr>
 		</table>
+	<?php
+	}
+	?>
+	<table>
+		<tr>
+			<td colspan="5"><a href="confirm.php"><button type="button" class="btn-sm btn-danger">Pay</button></a></td>
+		</tr>
+	</table>
 
-		<footer class="col-md-12">
-			Copyright 2017
-		</footer>
+	<footer>
+
+	</footer>
 </body>
 
 </html>

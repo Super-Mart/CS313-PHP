@@ -29,9 +29,9 @@ require 'start.php'
 			</div>
 		</div>
 	</nav>
-	<div id="shoppingBanner" class="jumbotron">
-		<h1>Your Order</h1>
-	</div>
+
+	<h1>Your Order</h1>
+
 	<?php
 	if (isset($_SESSION["cart"])) {
 		?>

@@ -19,49 +19,23 @@ require 'start.php'
 				<li>
 					<a href="shopping.php">Home</a>
 				</li>
-				<li>
-					<a href="order.php">View Order</a>
-				</li>
-				<li>
-					<a href="confirm.php">View Order</a>
-				</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<div id="shoppingBanner" class="jumbotron">
-		<h1>Thanks for Paying</h1>
-	</div>
+	<h1>Thanks for Paying</h1>
 	<?php
 	if (isset($_SESSION["cart"])) {
-		?>
-
-
-		<?php
-			$total = 0;
-			foreach ($_SESSION["cart"] as $i) {
-				?>
-
-		<?php
-				$total = $total + $_SESSION["amounts"][$i];
-			}
-			$_SESSION["total"] = $total;
-			?>
-
-		<h1>Total : <?php echo ($total); ?></h1>
-		</td>
-
-
-	<?php
+		$total = 0;
+		foreach ($_SESSION["cart"] as $i) {
+			$total = $total + $_SESSION["amounts"][$i];
+		}
+		$_SESSION["total"] = $total;
+		echo "<h1>Total: " . $total . "</h1>";
 	}
 	?>
-
-
-
-
-
-	<footer class="col-md-12">
-		Copyright 2017
+	<footer>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 	</footer>
 </body>
 

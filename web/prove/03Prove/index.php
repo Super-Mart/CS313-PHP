@@ -27,9 +27,9 @@ require 'start.php'
       </div>
     </div>
   </nav>
-  <div>
+
     <h1>Shopping Cart</h1>
-  </div>
+ 
   <h2>All Products</h2>
   <table>
     <tr>
