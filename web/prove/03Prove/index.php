@@ -1,158 +1,62 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-    crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
-    <link rel="stylesheet" href="/css/main.css">
-    <title>Phony</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="order.php">Cart</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>PHONY</h1>
-      <div class="grid-container">
-        <div class="grid-item">
-          <figure>
-            <img src="./images/samsungs10.jpg" alt="samsung s10" />
-            <figcaption>Samsung Galaxy S10</figcaption>
-          </figure>
-          <div class="product-description">
-            <p>Specs</p>
-            <ul>
-              <li>Weight: 157 g</li>
-              <li>Dimensions: 149.9 x 70.4 x 7.8 mm</li>
-              <li>6.1" Quad HD+ Dynamic AMOLED</li>
-              <li>Infinity-O Display (3040x1440)</li>
-              <li>HDR10+ certified</li>
-              <li>550 ppi</li>
-              <li>10MP Selfie Camera</li>
-              <li>12MP Telephoto Rear Camera</li>
-              <li>12MP Wide-angle Rear Camera</li>
-              <li>16MP Ultra Wide Rear Camera</li>
-            </ul>
-          </div>
+
+<head>
+    <title>PHONY</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Welcome to Phony</h1>
+    <?php
+    require_once "product-gallery.php";
+    ?>
+    <div class="clear-float"></div>
+    <div id="shopping-cart">
+        <div class="txt-heading">Shopping Cart <a id="btnEmpty" class="cart-action" onClick="cartAction('empty','');"><img src="images/icon-empty.png" /> Empty Cart</a></div>
+        <div id="cart-item">
+            <?php
+            require_once "ajax-action.php";
+            ?>
         </div>
-        <div class="grid-item">
-          <figure>
-            <img src="./images/samsungs10.jpg" alt="samsung s10" />
-            <figcaption>Samsung Galaxy S10</figcaption>
-          </figure>
-          <div class="product-description">
-            <p>Specs</p>
-            <ul>
-              <li>Weight: 157 g</li>
-              <li>Dimensions: 149.9 x 70.4 x 7.8 mm</li>
-              <li>6.1" Quad HD+ Dynamic AMOLED</li>
-              <li>Infinity-O Display (3040x1440)</li>
-              <li>HDR10+ certified</li>
-              <li>550 ppi</li>
-              <li>10MP Selfie Camera</li>
-              <li>12MP Telephoto Rear Camera</li>
-              <li>12MP Wide-angle Rear Camera</li>
-              <li>16MP Ultra Wide Rear Camera</li>
-            </ul>
-          </div>
-        </div>
-        <div class="grid-item">
-          <figure>
-            <img src="./images/samsungs10.jpg" alt="samsung s10" />
-            <figcaption>Samsung Galaxy S10</figcaption>
-          </figure>
-          <div class="product-description">
-            <p>Specs</p>
-            <ul>
-              <li>Weight: 157 g</li>
-              <li>Dimensions: 149.9 x 70.4 x 7.8 mm</li>
-              <li>6.1" Quad HD+ Dynamic AMOLED</li>
-              <li>Infinity-O Display (3040x1440)</li>
-              <li>HDR10+ certified</li>
-              <li>550 ppi</li>
-              <li>10MP Selfie Camera</li>
-              <li>12MP Telephoto Rear Camera</li>
-              <li>12MP Wide-angle Rear Camera</li>
-              <li>16MP Ultra Wide Rear Camera</li>
-            </ul>
-          </div>
-        </div>
-        <div class="grid-item">
-          <figure>
-            <img src="./images/samsungs10.jpg" alt="samsung s10" />
-            <figcaption>Samsung Galaxy S10</figcaption>
-          </figure>
-          <div class="product-description">
-            <p>Specs</p>
-            <ul>
-              <li>Weight: 157 g</li>
-              <li>Dimensions: 149.9 x 70.4 x 7.8 mm</li>
-              <li>6.1" Quad HD+ Dynamic AMOLED</li>
-              <li>Infinity-O Display (3040x1440)</li>
-              <li>HDR10+ certified</li>
-              <li>550 ppi</li>
-              <li>10MP Selfie Camera</li>
-              <li>12MP Telephoto Rear Camera</li>
-              <li>12MP Wide-angle Rear Camera</li>
-              <li>16MP Ultra Wide Rear Camera</li>
-            </ul>
-          </div>
-        </div>
-        <div class="grid-item">
-          <figure>
-            <img src="./images/samsungs10.jpg" alt="samsung s10" />
-            <figcaption>Samsung Galaxy S10</figcaption>
-          </figure>
-          <div class="product-description">
-            <p>Specs</p>
-            <ul>
-              <li>Weight: 157 g</li>
-              <li>Dimensions: 149.9 x 70.4 x 7.8 mm</li>
-              <li>6.1" Quad HD+ Dynamic AMOLED</li>
-              <li>Infinity-O Display (3040x1440)</li>
-              <li>HDR10+ certified</li>
-              <li>550 ppi</li>
-              <li>10MP Selfie Camera</li>
-              <li>12MP Telephoto Rear Camera</li>
-              <li>12MP Wide-angle Rear Camera</li>
-              <li>16MP Ultra Wide Rear Camera</li>
-            </ul>
-          </div>
-          <button>Add to Cart</button>
-        </div>
-        <div class="grid-item">
-          <figure>
-            <img src="./images/samsungs10.jpg" alt="samsung s10" />
-            <figcaption>Samsung Galaxy S10</figcaption>
-          </figure>
-          <div class="product-description">
-            <p>Specs</p>
-            <ul>
-              <li>Weight: 157 g</li>
-              <li>Dimensions: 149.9 x 70.4 x 7.8 mm</li>
-              <li>6.1" Quad HD+ Dynamic AMOLED</li>
-              <li>Infinity-O Display (3040x1440)</li>
-              <li>HDR10+ certified</li>
-              <li>550 ppi</li>
-              <li>10MP Selfie Camera</li>
-              <li>12MP Telephoto Rear Camera</li>
-              <li>12MP Wide-angle Rear Camera</li>
-              <li>16MP Ultra Wide Rear Camera</li>
-            </ul>
-          </div>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-    </main>
-  </body>
+    </div>
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script>
+        function cartAction(action, product_code) {
+            var queryString = "";
+            if (action != "") {
+                switch (action) {
+                    case "add":
+                        queryString = 'action=' + action + '&code=' + product_code +
+                            '&quantity=' + $("#qty_" + product_code).val();
+                        break;
+                    case "remove":
+                        queryString = 'action=' + action + '&code=' + product_code;
+                        break;
+                    case "empty":
+                        queryString = 'action=' + action;
+                        break;
+                }
+            }
+            jQuery.ajax({
+                url: "ajax-action.php",
+                data: queryString,
+                type: "POST",
+                success: function(data) {
+                    $("#cart-item").html(data);
+                    if (action == "add") {
+                        $("#add_" + product_code + " img").attr("src",
+                            "images/icon-check.png");
+                        $("#add_" + product_code).attr("onclick", "");
+                    }
+                },
+                error: function() {}
+            });
+        }
+    </script>
+</body>
+
 </html>
