@@ -53,15 +53,7 @@ require 'start.php'
     <?php
     }
     ?>
-
-    <?php
-    $cards = array("samsungs10", "samsungs10", "samsungs10", "samsungs10", "samsungs10", "samsungs10");
-    foreach ($cards as $card) {
-      echo "<img src='./images/$card.jpg'> <br>";
-    } ?>
   </table>
-
-
   <a href="order.php"><button type="button" class="btn-sm btn-primary">Order Cart</button></a>
   <p></p>
   <footer>
