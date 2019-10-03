@@ -21,10 +21,13 @@ require 'start.php'
     include("nav.php")
     ?>
   </header>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Shopping Cart</h1>
+      <p class="lead">All Products</p>
+    </div>
+  </div>
 
-  <h1>Shopping Cart</h1>
-
-  <h2>All Products</h2>
   <table>
     <tr>
       <th>Product</th>

@@ -15,23 +15,17 @@ require 'start.php'
 
 <body class="container">
 	<header>
-		<header>
-			<nav>
-				<ul class="nav nav-pills nav-fill">
-					<li class="nav-item">
-						<a class="nav-link" href="shopping.php">Active</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="order.php">Much longer nav link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="checkout.php">Link</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<?php
+		include("nav.php")
+		?>
 	</header>
-	<h1>Your Order</h1>
+
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">Your Order</h1>
+
+		</div>
+	</div>
 
 	<?php
 	if (isset($_SESSION["cart"])) {
