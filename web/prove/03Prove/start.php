@@ -1,8 +1,8 @@
 <?php session_start();
 
 //Define the products and cost
-$products = array("Samsung Galaxy S10", "Samsung Galaxy S10", "Samsung Galaxy S10", "Samsung Galaxy S10", "Samsung Galaxy S10", "Samsung Galaxy S10");
-$amounts = array("949.99", "949.99", "949.99", "949.99", "949.99", "949.99");
+$products = array("Samsung Galaxy S10", "iPhone X", "OnePlus 7 Pro", "Google Pixel 3", "Huawei P30 Pro");
+$amounts = array("949.99", "729.99", "699.99", "499.99", "899.99");
 // $images = array("./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg", "./images/samsungs10.jpg")
  
 if ( !isset($_SESSION["total"]) ) {
@@ -56,4 +56,3 @@ if ( !isset($_SESSION["total"]) ) {
    $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
   }
  }
- ?>
