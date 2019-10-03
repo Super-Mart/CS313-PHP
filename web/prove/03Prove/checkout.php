@@ -15,22 +15,23 @@ require 'start.php'
 
 <body class="container">
 
-	<nav>
-		<div>
-			<div>
-				<li>
-					<a href="shopping.php">Home</a>
-				</li>
-				<li>
-					<a href="order.php">View Order</a>
-				</li>
-				<li>
-					<a href="checkout.php">Go To Checkout</a>
-				</li>
+	<header>
+		<header>
+			<nav>
+				<ul class="nav nav-pills nav-fill">
+					<li class="nav-item">
+						<a class="nav-link" href="shopping.php">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="order.php">Much longer nav link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="checkout.php">Link</a>
+					</li>
 				</ul>
-			</div>
-		</div>
-	</nav>
+			</nav>
+		</header>
+	</header>
 
 	<h1>Check Out Page</h1>
 

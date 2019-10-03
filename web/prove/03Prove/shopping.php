@@ -16,22 +16,11 @@ require 'start.php'
 
 <body class="container">
 
-  <nav>
-    <div>
-      <div>
-        <li>
-          <a href="shopping.php">Home</a>
-        </li>
-        <li>
-          <a href="order.php">View Order</a>
-        </li>
-        <li>
-          <a href="checkout.php">Go To Checkout</a>
-        </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <header>
+    <?php
+    include("nav.php")
+    ?>
+  </header>
 
   <h1>Shopping Cart</h1>
 
