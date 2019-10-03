@@ -21,12 +21,10 @@ require 'start.php'
     include("nav.php")
     ?>
   </header>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Shopping Cart</h1>
-      <p class="lead">All Products</p>
-    </div>
-  </div>
+
+  <h1 class="display-4">Shopping Cart</h1>
+  <p class="lead">All Products</p>
+
 
   <table>
     <tr>
@@ -52,9 +50,9 @@ require 'start.php'
     ?>
   </table>
   <a href="order.php"><button type="button" class="btn-sm btn-primary">Order Cart</button></a>
-  <p></p>
-  <footer>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+  <footer class="col-md-12">
+
   </footer>
 </body>
 

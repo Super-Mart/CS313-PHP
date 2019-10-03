@@ -21,11 +21,8 @@ require 'start.php'
 		?>
 	</header>
 
-	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4">Thanks for Paying</h1>
-		</div>
-	</div>
+
+	<h1 class="display-4">Thanks for Paying</h1>
 
 	<?php
 	if (isset($_SESSION["cart"])) {
@@ -37,8 +34,8 @@ require 'start.php'
 		echo "<h1>Total: " . $total . "</h1>";
 	}
 	?>
-	<footer>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	<footer class="col-md-12">
+
 	</footer>
 </body>
 

@@ -20,13 +20,7 @@ require 'start.php'
 		?>
 	</header>
 
-	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4">Your Order</h1>
-
-		</div>
-	</div>
-
+	<h1 class="display-4">Your Order</h1>
 	<?php
 	if (isset($_SESSION["cart"])) {
 		?>
@@ -75,7 +69,7 @@ require 'start.php'
 	</table>
 
 	<footer class="col-md-12">
-		Copyright 2017
+
 	</footer>
 </body>
 

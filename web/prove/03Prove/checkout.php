@@ -21,12 +21,9 @@ require 'start.php'
 		?>
 	</header>
 
-	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4">Check Out</h1>
-			<p class="lead">page</p>
-		</div>
-	</div>
+
+	<h1 class="display-4">Check Out</h1>
+
 
 	<?php
 	if (isset($_SESSION["cart"])) {
@@ -71,7 +68,7 @@ require 'start.php'
 		</tr>
 	</table>
 
-	<footer>
+	<footer class="col-md-12">
 
 	</footer>
 </body>
