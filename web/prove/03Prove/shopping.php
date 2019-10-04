@@ -43,13 +43,13 @@ require 'start.php'
         <td width="10px">&nbsp;</td>
         <td><?php echo ($amounts[$i]); ?></td>
         <td width="10px">&nbsp;</td>
-        <td><a href="?add=<?php echo ($i); ?>"><button type="button" class="btn-sm btn-success">Add</button></a></td>
+        <td><a href="?add=<?php echo ($i); ?>"><button type="submit" class="btn-sm btn-success" onclick="toast()">Add</button></a></td>
       </tr>
     <?php
     }
     ?>
   </table>
-  <a href="order.php"><button type="button" class="btn-sm btn-primary" onclick="toast()">Order Cart</button></a>
+  <a href="order.php"><button type="button" class="btn-sm btn-primary">Order Cart</button></a>
   <div id="snackbar">Item has been added to your cart</div>
   <footer class="col-md-12">
 
