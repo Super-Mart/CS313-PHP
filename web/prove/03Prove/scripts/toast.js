@@ -1,4 +1,4 @@
-function myFunction() {
+function toast() {
   // Get the snackbar DIV
   var x = document.getElementById("snackbar");
 
