@@ -6,12 +6,12 @@ $db = get_db();
 <html>
 
 <head>
-    <title>Scripture List</title>
+    <title>Notes</title>
     <meta charset="utf-8">
 </head>
 
 <body>
-    <h1>Scripture Resources</h1>
+    <h1>Notes</h1>
     <?php
     $statement = $db->prepare("SELECT * FROM notes");
     $statement->execute();
@@ -29,6 +29,8 @@ $db = get_db();
         echo "<p>$user_id $category_id $created_at $note_title $note_text<p>";
     }
     ?>
+
+    <a href="/simple-notes-app-using-javascript-and-phpmysql/index.php" target="_blank" rel="noopener noreferrer">Link</a>
 </body>
 
 </html>
