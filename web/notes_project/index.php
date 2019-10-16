@@ -1,5 +1,5 @@
 <?php
-require "library/connections.php";
+require "./library/connections.php";
 $db = get_db();
 ?>
 <!DOCTYPE html>

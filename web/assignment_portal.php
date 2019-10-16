@@ -62,7 +62,7 @@
             </a>
           </div>
           <div class="card">
-            <a href="/notes_project/index.php">
+            <a href="./notes_project/index.php">
               <img src="./images/assignment.png" alt="Assignment Logo" />
               <h3>Notes</h3>
             </a>
