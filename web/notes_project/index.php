@@ -30,7 +30,7 @@ $db = get_db();
     }
     ?>
 
-    <a href="/simple-notes-app-using-javascript-and-phpmysql/index.php" target="_blank" rel="noopener noreferrer">Link</a>
+    <a href="./simple-notes-app-using-javascript-and-phpmysql/index.php" target="_blank" rel="noopener noreferrer">Link</a>
 </body>
 
 </html>
