@@ -26,7 +26,7 @@ $db = get_db();
         $note_title = $row['note_title'];
         $note_text = $row['note_text'];
 
-        echo "<p><strong>$user_id $category_id $created_at $note_title $note_text</strong> - \"$content\"<p>";
+        echo "<p>$user_id $category_id $created_at $note_title $note_text<p>";
     }
     ?>
 </body>
