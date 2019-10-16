@@ -1,4 +1,6 @@
 <?php
+require "connections.php";
+$db = get_db();
 include("functions.php");
 ?>
 <!DOCTYPE html>
@@ -21,8 +23,9 @@ include("functions.php");
     <div class="col-md-4" style="margin:0 auto;float:none !important; margin-top:50px;margin-bottom:60px">
         <div class="col-md-12 event-list-block">
             <div class="cal-day">
-                <span>Date Today</span>
-                <?php echo date('M d, Y h:i:s A l', strtotime('+6 hour')); ?>
+                <span>Today's Date</span>
+                <?php echo date('l, M d, Y'); ?>
+                <?php echo date('h:i A'); ?>
             </div>
             <ul class="event-list">
                 <?php load_notes(); ?>
