@@ -62,13 +62,13 @@
             </a>
           </div>
           <div class="card">
-            <a href="./notes_project/index.php">
+            <a href="./team_assignments/05Teach/viewScriptures.php">
               <img src="./images/assignment.png" alt="Assignment Logo" />
-              <h3>Notes</h3>
+              <h3>Scripture View</h3>
             </a>
           </div>
           <div class="card">
-            <a href="./team_assignments/05Teach/viewScriptures.php">
+            <a href="./notes_project/index.php">
               <img src="./images/assignment.png" alt="Assignment Logo" />
               <h3>Notes</h3>
             </a>
