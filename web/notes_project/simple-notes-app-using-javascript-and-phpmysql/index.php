@@ -20,7 +20,7 @@ include("functions.php");
 
 <body>
 
-    <div class="col-md-4" style="margin:0 auto;float:none !important; margin-top:50px;margin-bottom:60px">
+    <div class="col-md-4 mt-0 mb-0 mr-auto ml-auto">
         <div class="col-md-12 event-list-block">
             <div class="cal-day">
                 <span>Today's Date</span>

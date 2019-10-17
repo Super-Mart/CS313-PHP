@@ -5,13 +5,13 @@ if ($_GET) {
 		$data = $_GET['data'];
 		$status = addnotes($data);
 		if ($status != '')
-			$output = array('status' => 'success', 'notesId' => $status);
+			$output = array('status' => 'success', 'noteId' => $status);
 		else
 			$output = array('status' => 'error');
 		echo json_encode($output);
 	}
 	if ($method == 'deleting_notes') {
-		$id = $_GET['notesId'];
+		$noteId = $_GET['noteId'];
 		$status = deleting_notes($id);
 		if ($status == 'success')
 			$output = array('status' => 'success');
