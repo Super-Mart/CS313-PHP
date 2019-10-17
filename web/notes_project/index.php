@@ -31,7 +31,7 @@ $db = get_db();
         $note_title = $row['note_title'];
         $note_text = $row['note_text'];
 
-        echo "<p>$user_id $category_id $created_at $note_title $note_text<p>";
+        echo "<p>$userId $categoryId $created $note_title $note_text<p>";
     }
     ?>
 
