@@ -13,8 +13,8 @@ include("./library/functions.php");
     <h1>Notes</h1>
     <div class="cal-day">
         <span>Today's Date</span>
-        <?php echo date('l, M d, Y'); ?>
-        <?php echo date('h:i A'); ?>
+        <h3><?php echo date('l, M d, Y'); ?>
+            <?php echo date('h:i A'); ?></h3>
     </div>
     <ul class="event-list">
         <?php load_notes(); ?>
