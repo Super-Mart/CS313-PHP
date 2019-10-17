@@ -12,6 +12,11 @@ $db = get_db();
 
 <body>
     <h1>Notes</h1>
+    <div class="cal-day">
+        <span>Today's Date</span>
+        <?php echo date('l, M d, Y'); ?>
+        <?php echo date('h:i A'); ?>
+    </div>
     <?php
     $statement = $db->prepare("SELECT * FROM notes");
     $statement->execute();
