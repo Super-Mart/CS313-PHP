@@ -18,20 +18,26 @@ $db = get_db();
         <?php echo date('h:i A'); ?>
     </div>
     <?php
-    $statement = $db->prepare("SELECT * FROM notes");
+    $statement = $db->prepare("SELECT * FROM note");
     $statement->execute();
     // Go through each result
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         // The variable "row" now holds the complete record for that
         // row, and we can access the different values based on their
         // name
-        $userId = $row['userId'];
-        $categoryId = $row['categoryId'];
-        $created = $row['created'];
-        $note_title = $row['note_title'];
-        $note_text = $row['note_text'];
+        // $userId = $row['userId'];
+        // $categoryId = $row['categoryId'];
+        // $created = $row['created'];
+        // $note_title = $row['note_title'];
+        // $note_text = $row['note_text'];
 
-        echo "<p>$userId $categoryId $created $note_title $note_text<p>";
+        $noteId = $row['noteId'];
+        $note_description = $row['note_description'];
+        $date_added = $row['date_added'];
+
+        echo "<p>$date_added<p>";
+
+        echo "<p>$note_description<p>";
     }
     ?>
 

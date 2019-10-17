@@ -26,17 +26,17 @@ SET time_zone = "+00:00";
 -- Table structure for table `notes`
 --
 
-CREATE TABLE `notes` (
-  `id` int(11) NOT NULL,
-  `description` text NOT NULL,
-  `date_added` datetime NOT NULL
-) 
+CREATE TABLE note (
+  noteId int NOT NULL PRIMARY KEY,
+  note_description text NOT NULL,
+  date_added timestamp NOT NULL
+);
 
 --
 -- Dumping data for table `notes`
 --
 
-INSERT INTO `notes` (`id`, `description`, `date_added`) VALUES
+INSERT INTO note (noteId, note_description, date_added) VALUES
 (1, 'Gather article link', '2016-06-17 14:44:27'),
 (2, 'Featured news', '2016-06-17 14:49:28'),
 (3, 'Boosting', '2016-06-17 14:54:55');
