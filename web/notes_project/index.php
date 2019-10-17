@@ -1,5 +1,5 @@
 <?php
-require_once './library/functions.php';
+include("./library/functions.php");
 ?>
 <!DOCTYPE html>
 <html>
