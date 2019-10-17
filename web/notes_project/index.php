@@ -25,9 +25,9 @@ $db = get_db();
         // The variable "row" now holds the complete record for that
         // row, and we can access the different values based on their
         // name
-        $user_id = $row['userId'];
-        $category_id = $row['categoryId'];
-        $created_at = $row['created'];
+        $userId = $row['userId'];
+        $categoryId = $row['categoryId'];
+        $created = $row['created'];
         $note_title = $row['note_title'];
         $note_text = $row['note_text'];
 
