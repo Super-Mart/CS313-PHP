@@ -26,8 +26,10 @@ SET time_zone = "+00:00";
 -- Table structure for table `notes`
 --
 
-CREATE TABLE note (
+CREATE TABLE notes (
   noteId int NOT NULL PRIMARY KEY,
+	categoryId INT NOT NULL REFERENCES category(categoryId),
+  note_title text NOT NULL,
   note_description text NOT NULL,
   date_added timestamp NOT NULL
 );
@@ -40,6 +42,16 @@ INSERT INTO note (noteId, note_description, date_added) VALUES
 (1, 'Gather article link', '2016-06-17 14:44:27'),
 (2, 'Featured news', '2016-06-17 14:49:28'),
 (3, 'Boosting', '2016-06-17 14:54:55');
+
+INSERT INTO notes (noteId,categoryId, note_title, note_description, date_added) VALUES
+(1, 1, 'Personal', 'Gather article link', '2016-06-17 14:44:27'),
+(2, 2, 'Personal', 'Featured news', '2016-06-17 14:49:28'),
+(3, 3, 'Personal', 'Boosting', '2016-06-17 14:54:55');
+
+INSERT INTO category (categoryId, categoryName) VALUES
+(1, 'To-Do'),
+(2, 'Shopping'),
+(3, 'To Read');
 
 --
 -- Indexes for dumped tables
