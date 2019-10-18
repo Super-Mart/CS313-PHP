@@ -28,6 +28,8 @@ include("./library/functions.php");
                 <thead>
                     <tr>
                         <th scope="col">Date Added</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Note Title</th>
                         <th scope="col">Note Description</th>
                     </tr>
                 </thead>
