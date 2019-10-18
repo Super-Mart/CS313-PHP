@@ -52,9 +52,9 @@ include("./library/functions.php");
             </tr>
         </thead>
         <tbody>
-            <tr class="table-active">
-                <?php load_notes(); ?>
-            </tr>
+
+            <?php load_notes(); ?>
+
         </tbody>
     </table>
     <!-- <a href="./simple-notes-app-using-javascript-and-phpmysql/index.php" target="_blank" rel="noopener noreferrer">Link</a> -->
