@@ -45,10 +45,9 @@ include("./library/functions.php");
                 <h2>Today's Date</h2>
                 <h3><?php
                     $date = new DateTime("now", new DateTimeZone('America/Boise'));
-                    echo $date->format('l, M d, Y H:i A');
-                    ?></h3>
-                <h3><?php echo date('l, M d, Y'); ?>
-                    <?php echo date('h:i A'); ?></h3>
+                    echo $date->format('l, M d, Y h:i A');
+                    ?>
+                </h3>
             </div>
 
             <table class="table table-hover">
