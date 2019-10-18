@@ -14,7 +14,7 @@ include("./library/functions.php");
 
 <body>
     <main>
-        <div class="container-fluid">
+        <div class="container-fluid p-5">
             <div class="text-center">
                 <h1 class="display-3">Notes</h1>
             </div>
