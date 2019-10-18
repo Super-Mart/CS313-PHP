@@ -1,0 +1,15 @@
+/* 
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Montserrat Subrayada', sans-serif;
+
+ */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-weight: 700;
+}
