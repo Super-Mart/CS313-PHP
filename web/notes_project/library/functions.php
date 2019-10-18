@@ -21,9 +21,7 @@ function load_notes()
     }
 }
 
-// function deleteNote(
-//     $noteId
-// ) {
+// function deleteNote($noteId) {
 //     global $db;
 //     // Create the prepared statement using the acme connection
 //     $stmt = $db->prepare("DELETE FROM notes WHERE noteId = :noteId");
