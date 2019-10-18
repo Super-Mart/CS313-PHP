@@ -13,9 +13,11 @@ include("./library/functions.php");
 <body>
     <main>
         <div class="container-fluid">
-            <h1>Notes</h1>
+            <div class="text-center">
+                <h1 class="display-3">Notes</h1>
+            </div>
             <div class="c_date">
-                <p>Today's Date</p>
+                <h2>Today's Date</h2>
                 <h3><?php echo date('l, M d, Y'); ?>
                     <?php echo date('h:i A'); ?></h3>
             </div>
