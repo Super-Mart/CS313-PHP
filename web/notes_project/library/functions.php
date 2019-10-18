@@ -15,7 +15,7 @@ function load_notes()
         $date_added = $row['date_added'];
 
         echo "<tr class='table-secondary'><td id='$noteId'>$date_added</td>";
-        echo "<td>$categoryId</td>";
+        echo '<td>' . $categoryId . '</td>';
         echo "<td>$note_title</td>";
         echo "<td>$note_description</td></tr>";
     }
