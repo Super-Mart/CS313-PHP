@@ -13,16 +13,16 @@ include("./library/functions.php");
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
+        <div class="collapse navbar-collapse text-center" id="navbarColor01">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index.php">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./index.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Features</a>
@@ -43,6 +43,10 @@ include("./library/functions.php");
             </div>
             <div class="c_date">
                 <h2>Today's Date</h2>
+                <h3><?php
+                    $date = new DateTime("now", new DateTimeZone('America/Boise'));
+                    echo $date->format('l, M d, Y H:i A');
+                    ?></h3>
                 <h3><?php echo date('l, M d, Y'); ?>
                     <?php echo date('h:i A'); ?></h3>
             </div>
