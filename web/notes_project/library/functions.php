@@ -18,6 +18,5 @@ function load_notes()
         //echo '<td>' . $categoryId . '</td>';
         echo "<td>$note_title</td>";
         echo "<td>$note_description</td></tr>";
-        echo "<p>$noteId - $categoryId<p>";
     }
 }
