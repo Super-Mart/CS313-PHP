@@ -5,20 +5,21 @@ include("./library/functions.php");
 <html>
 
 <head>
-    <title>Notes</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Notes</title>
 </head>
 
 <body>
     <h1>Notes</h1>
-    <div class="cal-day">
-        <span>Today's Date</span>
+    <div class="c_date">
+        <p>Today's Date</p>
         <h3><?php echo date('l, M d, Y'); ?>
             <?php echo date('h:i A'); ?></h3>
     </div>
-    <ul class="event-list">
-        <?php load_notes(); ?>
-    </ul>
+    <!-- <ul class="event-list">
+        
+    </ul> -->
     <?php
 
     // $statement = $db->prepare("SELECT * FROM note");
@@ -43,8 +44,20 @@ include("./library/functions.php");
     //     echo "<p>$note_description<p>";
     // }
     ?>
-
-    <a href="./simple-notes-app-using-javascript-and-phpmysql/index.php" target="_blank" rel="noopener noreferrer">Link</a>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Date Added</th>
+                <th scope="col">Note Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-active">
+                <?php load_notes(); ?>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <a href="./simple-notes-app-using-javascript-and-phpmysql/index.php" target="_blank" rel="noopener noreferrer">Link</a> -->
 </body>
 
 </html>

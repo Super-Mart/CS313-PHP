@@ -12,6 +12,8 @@ function load_notes()
         $note_description = $row['note_description'];
         $date_added = $row['date_added'];
 
-        echo '<li id="' . $noteId . '">' . $note_description . '</li>';
+        echo '<td id="' . $noteId . '">' . $date_added . '</td>';
+
+        echo '<td id="' . $noteId . '">' . $note_description . '</td>';
     }
 }
