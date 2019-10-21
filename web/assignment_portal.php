@@ -68,7 +68,7 @@
             </a>
           </div>
           <div class="card">
-            <a href="./team_assignments/06Teach/showTopic.php">
+            <a href="./team_assignments/06Teach/showTopics.php">
               <img src="./images/assignment.png" alt="Assignment Logo" />
               <h3>Scripture View/Insert</h3>
             </a>
