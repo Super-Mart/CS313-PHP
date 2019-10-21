@@ -68,6 +68,12 @@
             </a>
           </div>
           <div class="card">
+            <a href="./team_assignments/06Teach/showTopic.php">
+              <img src="./images/assignment.png" alt="Assignment Logo" />
+              <h3>Scripture View/Insert</h3>
+            </a>
+          </div>
+          <div class="card">
             <a href="./notes_project/index.php">
               <img src="./images/assignment.png" alt="Assignment Logo" />
               <h3>Notes</h3>

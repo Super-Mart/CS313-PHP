@@ -13,8 +13,8 @@ include("./library/functions.php");
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Notes</a>
+    <nav class="navbar navbar-dark bg-primary pl-5 pr-5">
+        <a class="navbar-brand" href="./index.php">Notes</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
