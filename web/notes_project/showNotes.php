@@ -1,52 +1,74 @@
 <?php
-require("dbConnect.php");
-$db = get_db();
+include("./library/functions.php");
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Notes - Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700|Montserrat:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div>
-        <h1>Notes</h1>
-        <?php
-        try {
+    <nav class="navbar navbar-dark bg-primary pl-5 pr-5">
+        <a class="navbar-brand" href="./index.php">Notes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            // prepare the statement
-            $statement = $db->prepare('SELECT notesId, notesTitle, notesContent FROM notes');
-            $statement->execute();
+        <div class="collapse navbar-collapse text-center" id="navbarColor01">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container-fluid p-5">
+            <div class="text-center">
+                <h1 class="display-3">Notes</h1>
+            </div>
+            <div class="c_date">
+                <h2>Today's Date</h2>
+                <h3><?php
+                    $date = new DateTime("now", new DateTimeZone('America/Boise'));
+                    echo $date->format('l, M d, Y h:i A');
+                    ?>
+                </h3>
+            </div>
 
-            // Go through each result
-            while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-                echo '<p>';
-                echo '<strong>' . $row['notesTitle'] . ' ' . $row['notesContent'];
-                echo '<br />';
-                echo 'Category: ';
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Note Title</th>
+                        <th scope="col">Note Description</th>
+                        <th scope="col">Category</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-                $stmtCategory = $db->prepare('SELECT categoryName FROM notesCategory nc'
-                    . ' INNER JOIN notes_notesCategory nnc ON nnc.notesCategoryId = nc.notesCategoryId'
-                    . ' WHERE nnc.notesId = :notesId');
-
-                $stmtCategory->bindValue(':notesId', $row['notesId']);
-                $stmtCategory->execute();
-
-                while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
-                    echo $categoryRow['categoryName'] . ' ';
-                }
-
-                echo '</p>';
-            }
-        } catch (PDOException $ex) {
-            echo "Error with DB. Details: $ex";
-            die();
-        }
-        ?>
-        <button><a href="./newEntry.php">Add A New Category</a></button>
-    </div>
-
+                    <?php load_notes(); ?>
+                    <?php load_notes_category(); ?>
+                </tbody>
+            </table>
+            <button><a href="./newEntry.php">Add New Note</a></button>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" i ntegrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
