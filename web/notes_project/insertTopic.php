@@ -8,10 +8,8 @@ $chkCategoriesIds = $_POST['chkCategories'];
 // For debugging purposes, you might include some echo statements like this
 // and then not automatically redirect until you have everything working.
 
-// echo "book=$book\n";
-// echo "chapter=$chapter\n";
-// echo "verse=$verse\n";
-// echo "content=$content\n";
+echo "book=$title\n";
+echo "content=$content\n";
 
 // we could (and should!) put additional checks here to verify that all this data is actually provided
 

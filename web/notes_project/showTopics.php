@@ -28,39 +28,34 @@ $db = get_db();
 			</div>
 
 			<?php
+			// prepare the statement
+			$statement = $db->prepare('SELECT * FROM note');
+			$statement->execute();
 
-			try {
-				// prepare the statement
-				$statement = $db->prepare('SELECT id, title, content FROM note');
-				$statement->execute();
+			// Go through each result
+			while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+				var_dump($row);
 
-				// Go through each result
-				while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-					var_dump($row);
+				echo '<p>' . $row['title'] . ' ' . $row['content'];
+				echo '<br />';
+				echo 'Category: ';
 
-					echo '<p>' . $row['title'] . ' ' . $row['content'];
-					echo '<br />';
-					echo 'Category: ';
+				// get the topics now for this scripture
+				$stmtTopics = $db->prepare('SELECT name FROM category c'
+					. ' INNER JOIN note_category nc ON nc.categoryId = c.id'
+					. ' WHERE nc.noteId = :noteId');
 
-					// get the topics now for this scripture
-					$stmtTopics = $db->prepare('SELECT name FROM category c'
-						. ' INNER JOIN note_category nc ON nc.categoryId = c.id'
-						. ' WHERE nc.noteId = :noteId');
+				$stmtTopics->bindValue(':noteId', $row['id']);
+				$stmtTopics->execute();
 
-					$stmtTopics->bindValue(':noteId', $row['id']);
-					$stmtTopics->execute();
-
-					// Go through each topic in the result
-					while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
-						echo $categoryRow['name'] . ' ';
-					}
-
-					echo '</p>';
+				// Go through each topic in the result
+				while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
+					echo $categoryRow['name'] . ' ';
 				}
-			} catch (PDOException $ex) {
-				echo "Error with DB. Details: $ex";
-				die();
+
+				echo '</p>';
 			}
+
 			?>
 			<button><a href="./topicEntry.php">Insert New</a></button>
 		</div>
