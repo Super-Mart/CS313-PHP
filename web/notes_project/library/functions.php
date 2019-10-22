@@ -32,16 +32,16 @@ function load_notes_category()
             echo '<tr class="table-secondary"><td>' . $notesTitle . '</td>';
             echo '<td>' . $notesContent . '</td>';
             echo '<td></tr>';
-            // $stmtCategory = $db->prepare('SELECT categoryName FROM notesCategory nc'
-            //     . ' INNER JOIN notes_notesCategory nnc ON nnc.notesCategoryId = nc.notesCategoryId'
-            //     . ' WHERE nnc.notesId = :notesId');
+            $stmtCategory = $db->prepare('SELECT categoryName FROM notesCategory nc'
+                . ' INNER JOIN notes_notesCategory nnc ON nnc.notesCategoryId = nc.notesCategoryId'
+                . ' WHERE nnc.notesId = :notesId');
 
-            // $stmtCategory->bindValue(':notesId', $notesId);
-            // $stmtCategory->execute();
+            $stmtCategory->bindValue(':notesId', $notesId);
+            $stmtCategory->execute();
 
-            // while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
-            //     echo $categoryRow['categoryName'] . '</td></tr>';
-            // }
+            while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
+                echo $categoryRow['categoryName'] . '</td></tr>';
+            }
         }
     } catch (PDOException $ex) {
         echo "Error with DB. Details: $ex";
