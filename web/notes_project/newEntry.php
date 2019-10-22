@@ -29,7 +29,7 @@ $db = get_db();
             <?php
 
             try {
-                $statement = $db->prepare('SELECT notesCategoryId, name FROM notesCategory');
+                $statement = $db->prepare('SELECT notesCategoryId, categoryName FROM notesCategory');
                 $statement->execute();
 
                 // Go through each result

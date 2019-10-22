@@ -22,7 +22,7 @@ $db = get_db();
             // Go through each result
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                 echo '<p>';
-                echo '<strong>' . $row['notesTitle'] . ' ' . $row['notesContent'] . ':';
+                echo '<strong>' . $row['notesTitle'] . ' ' . $row['notesContent'];
                 echo '<br />';
                 echo 'Category: ';
 
