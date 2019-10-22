@@ -16,13 +16,13 @@ $db = get_db();
         try {
 
             // prepare the statement
-            $statement = $db->prepare('SELECT notesId, notesTitle, noteContent FROM notes');
+            $statement = $db->prepare('SELECT notesId, notesTitle, notesContent FROM notes');
             $statement->execute();
 
             // Go through each result
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                 echo '<p>';
-                echo '<strong>' . $row['notesTitle'] . ' ' . $row['noteContent'] . ':';
+                echo '<strong>' . $row['notesTitle'] . ' ' . $row['notesContent'] . ':';
                 echo '<br />';
                 echo 'Category: ';
 
