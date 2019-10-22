@@ -1,8 +1,6 @@
 <?php
-
 require("dbConnect.php");
 $db = get_db();
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +28,6 @@ $db = get_db();
 			</div>
 
 			<?php
-
 
 			try {
 				// prepare the statement
@@ -65,7 +62,7 @@ $db = get_db();
 			?>
 			<button><a href="./topicEntry.php">Insert New</a></button>
 		</div>
-
+	</div>
 </body>
 
 </html>
