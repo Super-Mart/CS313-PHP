@@ -70,7 +70,7 @@ $db = get_db();
 			die();
 		}
 		?>
-		<button><a href="/topicEntry.php">Insert New</a></button>
+		<button><a href="./topicEntry.php">Insert New</a></button>
 	</div>
 
 </body>
