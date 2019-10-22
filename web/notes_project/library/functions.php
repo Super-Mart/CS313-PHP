@@ -1,5 +1,5 @@
 <?php
-require_once "./library/dbConnect.php";
+require_once "./library/connections.php";
 $db = get_db();
 
 function load_notes()
@@ -8,43 +8,34 @@ function load_notes()
     $statement = $db->prepare("SELECT * FROM notes");
     $statement->execute();
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-        $notesId = $row['notesId'];
-        $notesTitle = $row['notesTitle'];
-        $notesContent = $row['notesContent'];
+        $noteId = $row['noteId'];
+        $categoryId = $row['categoryId'];
+        $note_title = $row['note_title'];
+        $note_description = $row['note_description'];
+        $date_added = $row['date_added'];
 
-        echo '<tr class="table-secondary"><td>' . $notesTitle . '</td>';
-        echo '<td>' . $notesContent . '</td></tr>';
+        echo '<tr class="table-secondary"><td>' . $date_added . '</td>';
+        //echo '<td>' . $categoryId . '</td>';
+        echo '<td>' . $note_title . '</td>';
+        echo '<td>' . $note_description . '</td></tr>';
     }
 }
 
-function load_notes_category()
-{
-    try {
-        global $db;
-        // prepare the statement
-        $statement = $db->prepare('SELECT * FROM notes');
-        $statement->execute();
-        // Go through each result
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-            $notesId = $row['notesId'];
-            $notesTitle = $row['notesTitle'];
-            $notesContent = $row['notesContent'];
-            echo '<tr class="table-secondary"><td>' . $notesTitle . '</td>';
-            echo '<td>' . $notesContent . '</td>';
-            echo '<td></tr>';
-            $stmtCategory = $db->prepare('SELECT categoryName FROM notesCategory nc'
-                . ' INNER JOIN notes_notesCategory nnc ON nnc.notesCategoryId = nc.notesCategoryId'
-                . ' WHERE nnc.notesId = :notesId');
+// function deleteNote($noteId) {
+//     global $db;
+//     // Create the prepared statement using the acme connection
+//     $stmt = $db->prepare("DELETE FROM notes WHERE noteId = :noteId");
+//     // The next four lines replace the placeholders in the SQL
+//     // statement with the actual values in the variables
+//     // and tells the database the type of data it is  
+//     $stmt->bindValue(':noteId', $noteId, PDO::PARAM_INT);
 
-            $stmtCategory->bindValue(':notesId', $notesId);
-            $stmtCategory->execute();
-
-            while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
-                echo $categoryRow['categoryName'] . '</td></tr>';
-            }
-        }
-    } catch (PDOException $ex) {
-        echo "Error with DB. Details: $ex";
-        die();
-    }
-}
+//     // Insert the data
+//     $stmt->execute();
+//     // Ask how many rows changed as a result of our insert
+//     $rowsChanged = $stmt->rowCount();
+//     // Close the database interaction
+//     $stmt->closeCursor();
+//     // Return the indication of success (rows changed)
+//     return $rowsChanged;
+// }

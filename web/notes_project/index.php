@@ -1,15 +1,15 @@
 <?php
-include("./library/dbConnect.php");
-$db = $db = get_db();
+include("./library/functions.php");
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Notes - Home</title>
+    <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700|Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <title>Notes</title>
 </head>
 
 <body>
@@ -53,18 +53,20 @@ $db = $db = get_db();
             <table class="table table-hover">
                 <thead>
                     <tr>
+                        <th scope="col">Date Added</th>
+                        <!-- <th scope="col">Category</th> -->
                         <th scope="col">Note Title</th>
                         <th scope="col">Note Description</th>
-                        <th scope="col">Category</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php load_notes_category() ?>
+
+                    <?php load_notes(); ?>
+
                 </tbody>
             </table>
-            <button><a href="./newEntry.php">Add New Note</a></button>
+            <!-- <a href="./simple-notes-app-using-javascript-and-phpmysql/index.php" target="_blank" rel="noopener noreferrer">Link</a> -->
         </div>
-
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" i ntegrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
