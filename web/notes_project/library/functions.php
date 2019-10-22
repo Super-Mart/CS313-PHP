@@ -1,5 +1,5 @@
 <?php
-require_once "./library/connections.php";
+require("./library/connections.php");
 $db = get_db();
 
 function load_notes()
