@@ -3,7 +3,7 @@
 // get the data from the POST
 $title = $_POST['txtTitle'];
 $content = $_POST['txtContent'];
-$chkCategoryIds = $_POST['chkCategories'];
+$chkCategoriesIds = $_POST['chkCategories'];
 
 // For debugging purposes, you might include some echo statements like this
 // and then not automatically redirect until you have everything working.
@@ -19,8 +19,7 @@ $chkCategoryIds = $_POST['chkCategories'];
 require("dbConnect.php");
 $db = get_db();
 
-try
-{
+try {
 	// Add the Scripture
 
 	// We do this by preparing the query with placeholder values
@@ -38,8 +37,7 @@ try
 	$noteId = $db->lastInsertId("note_id_seq");
 
 	// Now go through each topic id in the list from the user's checkboxes
-	foreach ($chkCategoryIds as $chkCategoryId)
-	{
+	foreach ($chkCategoryIds as $chkCategoryId) {
 		echo "noteId: $noteId, categoryId: $categoryId";
 
 		// Again, first prepare the statement
@@ -51,9 +49,7 @@ try
 
 		$statement->execute();
 	}
-}
-catch (Exception $ex)
-{
+} catch (Exception $ex) {
 	// Please be aware that you don't want to output the Exception message in
 	// a production environment
 	echo "Error with DB. Details: $ex";
