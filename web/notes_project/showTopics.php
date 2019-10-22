@@ -7,8 +7,8 @@ $db = get_db();
 
 <head>
 	<title>Notes</title>
-	<link rel="stylesheet" href="bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -33,6 +33,8 @@ $db = get_db();
 				// prepare the statement
 				$statement = $db->prepare('SELECT id, title, content FROM note');
 				$statement->execute();
+				var_dump($statement);
+				exit;
 
 				// Go through each result
 				while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
