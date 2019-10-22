@@ -74,7 +74,7 @@
             </a>
           </div>
           <div class="card">
-            <a href="./notes_project/shownotes.php">
+            <a href="./notes_project/showNotes.php">
               <img src="./images/assignment.png" alt="Assignment Logo" />
               <h3>Notes</h3>
             </a>

@@ -35,13 +35,11 @@ function load_notes_category()
             . ' INNER JOIN notes_notesCategory nnc ON nnc.notesCategoryId = nc.notesCategoryId'
             . ' WHERE nnc.notesId = :notesId');
 
-        $stmtCategory->bindValue(':notesId', $row['notesId']);
+        $stmtCategory->bindValue(':notesId', $notesId);
         $stmtCategory->execute();
 
         while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
-            echo $categoryRow['categoryName'] . ' ';
+            echo $categoryRow['categoryName'] . '</td></tr>';
         }
-
-        echo '</td></tr>';
     }
 }
