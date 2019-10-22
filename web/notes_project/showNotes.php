@@ -26,7 +26,7 @@ $db = get_db();
                 echo '<br />';
                 echo 'Category: ';
 
-                $stmtCategory = $db->prepare('SELECT name FROM notesCategory nc'
+                $stmtCategory = $db->prepare('SELECT categoryName FROM notesCategory nc'
                     . ' INNER JOIN notes_notesCategory nnc ON nnc.notesCategoryId = nc.notesCategoryId'
                     . ' WHERE nnc.notesId = :notesId');
 
