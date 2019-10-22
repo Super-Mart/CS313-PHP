@@ -53,16 +53,13 @@ include("./library/functions.php");
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">Date Added</th>
-                        <!-- <th scope="col">Category</th> -->
                         <th scope="col">Note Title</th>
                         <th scope="col">Note Description</th>
+                        <th scope="col">Category</th>
                     </tr>
                 </thead>
                 <tbody>
-
                     <?php load_notes(); ?>
-
                 </tbody>
             </table>
             <!-- <a href="./simple-notes-app-using-javascript-and-phpmysql/index.php" target="_blank" rel="noopener noreferrer">Link</a> -->
