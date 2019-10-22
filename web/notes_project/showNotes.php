@@ -53,7 +53,7 @@ $db = $db = get_db();
             try {
 
                 // prepare the statement
-                $statement = $db->prepare('SELECT notesId, notesTitle, notesContent FROM notes');
+                $statement = $db->prepare('SELECT * FROM notes');
                 $statement->execute();
 
                 // Go through each result
