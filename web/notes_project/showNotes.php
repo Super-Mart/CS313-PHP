@@ -1,5 +1,6 @@
 <?php
 include("./library/dbConnect.php");
+$db = $db = get_db();
 ?>
 <!DOCTYPE html>
 <html>
