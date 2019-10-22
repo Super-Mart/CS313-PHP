@@ -59,7 +59,7 @@ $db = $db = get_db();
                     </tr>
                 </thead>
                 <tbody>
-                    <?php load_notes(); ?>
+                    <?php load_notes_category() ?>
                 </tbody>
             </table>
             <button><a href="./newEntry.php">Add New Note</a></button>
