@@ -33,11 +33,11 @@ $db = get_db();
 				// prepare the statement
 				$statement = $db->prepare('SELECT id, title, content FROM note');
 				$statement->execute();
-				var_dump($statement);
-				exit;
 
 				// Go through each result
 				while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+					var_dump($row);
+
 					echo '<p>' . $row['title'] . ' ' . $row['content'];
 					echo '<br />';
 					echo 'Category: ';
