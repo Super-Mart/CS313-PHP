@@ -6,26 +6,32 @@ $db = get_db();
 <html>
 
 <head>
-	<title>Notes</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700|Montserrat:400,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/styles.css">
+	<title>Notes</title>
 </head>
 
 <body>
+	<nav class="navbar navbar-dark bg-primary pl-5 pr-5">
+		<a class="navbar-brand" href="./index.php">Notes</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse text-center" id="navbarColor01">
+			<?php
+			include('./common/nav.php');
+			?>
+		</div>
+	</nav>
 	<div>
 
 		<div class="container-fluid p-5">
-			<div class="text-center">
-				<h1 class="display-3">Notes</h1>
-			</div>
-			<div class="c_date">
-				<h2>Today's Date</h2>
-				<h3><?php
-					$date = new DateTime("now", new DateTimeZone('America/Boise'));
-					echo $date->format('l, M d, Y h:i A');
-					?>
-				</h3>
-			</div>
+
+			<?php
+			include('./common/header.php');
+			?>
 
 			<?php
 			try {
@@ -60,7 +66,6 @@ $db = get_db();
 				die();
 			}
 			?>
-			<button><a href="./topicEntry.php">Insert New</a></button>
 		</div>
 	</div>
 </body>
