@@ -41,8 +41,6 @@ include("./library/functions.php");
 					</tr>
 				</thead>
 				<tbody>
-					<?php load_notes(); ?>
-
 					<?php load_notes();
 					// try {
 					// 	// prepare the statement
