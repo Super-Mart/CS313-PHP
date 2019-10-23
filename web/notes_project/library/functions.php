@@ -26,7 +26,7 @@ function load_notes()
 
             // Go through each topic in the result
             while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
-                echo $categoryRow['name'] . ' ';
+                echo '<td>' . $categoryRow['name'] . '</td>';
             }
 
             echo '</tr>';
