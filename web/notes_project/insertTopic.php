@@ -3,13 +3,13 @@
 // get the data from the POST
 $title = $_POST['txtTitle'];
 $content = $_POST['txtContent'];
-$chkCategoriesIds = $_POST['chkCategories'];
+$categoryIds = $_POST['chkCategories'];
 
 // For debugging purposes, you might include some echo statements like this
 // and then not automatically redirect until you have everything working.
 
-echo "book=$title\n";
-echo "content=$content\n";
+// echo "title=$title\n";
+// echo "content=$content\n";
 
 // we could (and should!) put additional checks here to verify that all this data is actually provided
 
@@ -35,7 +35,7 @@ try {
 	$noteId = $db->lastInsertId("note_id_seq");
 
 	// Now go through each topic id in the list from the user's checkboxes
-	foreach ($chkCategoryIds as $chkCategoryId) {
+	foreach ($categoryIds as $categoryId) {
 		echo "noteId: $noteId, categoryId: $categoryId";
 
 		// Again, first prepare the statement
