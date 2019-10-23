@@ -14,7 +14,7 @@ echo "content=$content\n";
 // we could (and should!) put additional checks here to verify that all this data is actually provided
 
 
-require("dbConnect.php");
+require("./library/dbConnect.php");
 $db = get_db();
 
 try {
