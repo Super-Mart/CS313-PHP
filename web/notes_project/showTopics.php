@@ -32,42 +32,54 @@ include("./library/functions.php");
 			include('./common/header.php');
 			?>
 
-			<?php load_notes();
-			// try {
-			// 	// prepare the statement
-			// 	$statement = $db->prepare('SELECT * FROM note');
-			// 	$statement->execute();
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th scope="col">Note Title</th>
+						<th scope="col">Note Description</th>
+						<th scope="col">Category</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php load_notes(); ?>
 
-			// 	// Go through each result
-			// 	while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+					<?php load_notes();
+					// try {
+					// 	// prepare the statement
+					// 	$statement = $db->prepare('SELECT * FROM note');
+					// 	$statement->execute();
 
-			// 		echo '<p>' . $row['title'] . ' ' . $row['content'];
-			// 		echo '<br />';
-			// 		echo 'Category: '; 
+					// 	// Go through each result
+					// 	while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 
-			// 		// get the topics now for this scripture
-			// 		$stmtCategory = $db->prepare('SELECT name FROM category c'
-			// 			. ' INNER JOIN note_category nc ON nc.categoryId = c.id'
-			// 			. ' WHERE nc.noteId = :noteId');
+					// 		echo '<p>' . $row['title'] . ' ' . $row['content'];
+					// 		echo '<br />';
+					// 		echo 'Category: '; 
 
-			// 		$stmtCategory->bindValue(':noteId', $row['id']);
-			// 		$stmtCategory->execute();
+					// 		// get the topics now for this scripture
+					// 		$stmtCategory = $db->prepare('SELECT name FROM category c'
+					// 			. ' INNER JOIN note_category nc ON nc.categoryId = c.id'
+					// 			. ' WHERE nc.noteId = :noteId');
 
-			// 		// Go through each topic in the result
-			// 		while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
-			// 			echo $categoryRow['name'] . ' ';
-			// 		}
+					// 		$stmtCategory->bindValue(':noteId', $row['id']);
+					// 		$stmtCategory->execute();
 
-			// 		echo '</p>';
-			// 	}
-			// } catch (PDOException $ex) {
-			// 	echo "Error with DB. Details: $ex";
-			// 	die();
-			// }
-			?>
-			</tbody>
+					// 		// Go through each topic in the result
+					// 		while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
+					// 			echo $categoryRow['name'] . ' ';
+					// 		}
 
+					// 		echo '</p>';
+					// 	}
+					// } catch (PDOException $ex) {
+					// 	echo "Error with DB. Details: $ex";
+					// 	die();
+					// }
+					?>
+				</tbody>
 
+				</tbody>
+			</table>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
