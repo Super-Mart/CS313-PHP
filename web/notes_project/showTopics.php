@@ -1,6 +1,5 @@
 <?php
-require("dbConnect.php");
-$db = get_db();
+include("./library/functions.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,39 +32,19 @@ $db = get_db();
 			include('./common/header.php');
 			?>
 
-			<?php
-			try {
-				// prepare the statement
-				$statement = $db->prepare('SELECT * FROM note');
-				$statement->execute();
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th scope="col">Note Title</th>
+						<th scope="col">Note Description</th>
+						<th scope="col">Category</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php load_notes(); ?>
+				</tbody>
+			</table>
 
-				// Go through each result
-				while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-
-					echo '<p>' . $row['title'] . ' ' . $row['content'];
-					echo '<br />';
-					echo 'Category: ';
-
-					// get the topics now for this scripture
-					$stmtCategory = $db->prepare('SELECT name FROM category c'
-						. ' INNER JOIN note_category nc ON nc.categoryId = c.id'
-						. ' WHERE nc.noteId = :noteId');
-
-					$stmtCategory->bindValue(':noteId', $row['id']);
-					$stmtCategory->execute();
-
-					// Go through each topic in the result
-					while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
-						echo $categoryRow['name'] . ' ';
-					}
-
-					echo '</p>';
-				}
-			} catch (PDOException $ex) {
-				echo "Error with DB. Details: $ex";
-				die();
-			}
-			?>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

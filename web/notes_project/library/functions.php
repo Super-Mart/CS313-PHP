@@ -1,0 +1,38 @@
+<?php
+require("./library/dbConnect.php");
+$db = get_db();
+
+function load_notes()
+{
+    global $db;
+    try {
+        // prepare the statement
+        $statement = $db->prepare('SELECT * FROM note');
+        $statement->execute();
+
+        // Go through each result
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+
+            echo '<tr class="table-secondary"><td>' . $row['title'] . '</td>';
+            echo '<td>' . $row['content'] . '</td>';
+            echo '<td>';
+            // get the topics now for this scripture
+            $stmtCategory = $db->prepare('SELECT name FROM category c'
+                . ' INNER JOIN note_category nc ON nc.categoryId = c.id'
+                . ' WHERE nc.noteId = :noteId');
+
+            $stmtCategory->bindValue(':noteId', $row['id']);
+            $stmtCategory->execute();
+
+            // Go through each topic in the result
+            while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
+                echo $categoryRow['name'] . ' ';
+            }
+
+            echo '</td></tr>';
+        }
+    } catch (PDOException $ex) {
+        echo "Error with DB. Details: $ex";
+        die();
+    }
+}
