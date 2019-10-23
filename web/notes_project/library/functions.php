@@ -15,7 +15,7 @@ function load_notes()
             echo '<tr class="table-secondary">';
             echo '<td>' . $row['title'] . '</td>';
             echo '<td>' . $row['content'] . '</td>';
-
+            echo '<td>';
             // get the topics now for this scripture
             $stmtCategory = $db->prepare('SELECT name FROM category c'
                 . ' INNER JOIN note_category nc ON nc.categoryId = c.id'
@@ -26,10 +26,10 @@ function load_notes()
 
             // Go through each topic in the result
             while ($categoryRow = $stmtCategory->fetch(PDO::FETCH_ASSOC)) {
-                echo '<td><ul><li>' . $categoryRow['name'] . '</ul></li></td>';
+                echo '<ul><li>' . $categoryRow['name'] . '</ul></li>';
             }
 
-            echo '</tr>';
+            echo '</td></tr>';
         }
     } catch (PDOException $ex) {
         echo "Error with DB. Details: $ex";
