@@ -5,20 +5,13 @@ $title = $_POST['txtTitle'];
 $content = $_POST['txtContent'];
 $categoryIds = $_POST['chkCategories'];
 
-// For debugging purposes, you might include some echo statements like this
-// and then not automatically redirect until you have everything working.
-
 // echo "title=$title\n";
 // echo "content=$content\n";
-
-// we could (and should!) put additional checks here to verify that all this data is actually provided
-
 
 require("./library/dbConnect.php");
 $db = get_db();
 
 try {
-	// Add the Scripture
 
 	// We do this by preparing the query with placeholder values
 	$query = 'INSERT INTO note(title, content) VALUES(:title, :content)';

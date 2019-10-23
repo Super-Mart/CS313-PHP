@@ -1,10 +1,5 @@
 <?php
-
-// The DB connection logic is in another file so it can be included
-// in each of our different PHP files.
-require("./library/dbConnect.php");
-$db = get_db();
-
+include("./library/functions.php");
 ?>
 <!DOCTYPE html>
 <html>
