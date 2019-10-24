@@ -78,7 +78,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword'])) {
 						<input type="password" class="form-control" id="txtPassword" name="txtPassword" placeholder="Password">
 						<br /><br />
 
-						<input type="submit" class="btn btn-success mb-3" value="Sign In" />
+						<input type="submit" class="btn btn-primary mb-3" value="Sign In" />
 						<br />
 						<p>Or <a href="signUp.php" class="card-link">Sign up</a> for a new account.</p>
 					</form>
