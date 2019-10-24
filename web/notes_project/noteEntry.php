@@ -32,7 +32,7 @@ include("./library/functions.php");
 			include('./common/header.php');
 			?>
 
-			<form id="mainForm" action="insertNote.php" method="POST">
+			<form id="mainForm" action="./library/insertNote.php" method="POST">
 
 				<div class="form-group mt-3">
 					<label for="txtTitle"><strong>Title</strong></label>
