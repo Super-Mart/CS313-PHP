@@ -5,4 +5,7 @@
     <li class="nav-item">
         <a class="nav-link" href="./topicEntry.php">New Entry</a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="./signOut.php">New Entry</a>
+    </li>
 </ul>
