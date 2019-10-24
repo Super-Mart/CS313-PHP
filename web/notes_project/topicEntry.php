@@ -53,7 +53,7 @@ include("./library/functions.php");
 				<textarea id="txtContent" name="txtContent" rows="4" cols="50"></textarea> -->
 				<br /><br />
 
-				<label>Categories:</label><br />
+				<label><strong>Categories</strong></label><br />
 
 				<?php load_categories(); ?>
 
