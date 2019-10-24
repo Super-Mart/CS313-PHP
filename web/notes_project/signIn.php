@@ -13,7 +13,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword'])) {
 	$password = $_POST['txtPassword'];
 
 	// Connect to the DB
-	require("dbConnect.php");
+	require("./library/dbConnect.php");
 	$db = get_db();
 
 	$query = 'SELECT password FROM login WHERE username=:username';
@@ -31,7 +31,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword'])) {
 		if (password_verify($password, $hashedPasswordFromDB)) {
 			// password was correct, put the user on the session, and redirect to home
 			$_SESSION['username'] = $username;
-			header("Location: home.php");
+			header("Location: showNotes.php");
 			die(); // we always include a die after redirects.
 		} else {
 			$badLogin = true;
@@ -58,7 +58,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword'])) {
 
 		<?php
 		if ($badLogin) {
-			echo "<div class='alert alert-danger' role='alert'>  <p>Incorrect username or password!</p></div><br /><br />\n";
+			echo "<div class='alert alert-danger' role='alert'><p>Incorrect username or password!</p></div><br /><br />\n";
 		}
 		?>
 
@@ -84,9 +84,6 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword'])) {
 					</form>
 				</div>
 			</div>
-
-
-			<br /><br />
 
 		</div>
 
