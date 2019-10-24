@@ -38,9 +38,6 @@ include("./library/functions.php");
 					<label for="txtTitle"><strong>Title</strong></label>
 					<input type="text" class="form-control" id="txtTitle" name="txtTitle">
 				</div>
-				<!-- 
-				<label for="txtTitle" class="mt-3"><strong>Title</strong></label>
-				<input type="text" class="form-control" id="txtTitle" name="txtTitle"> -->
 
 				<br /><br />
 
@@ -49,8 +46,6 @@ include("./library/functions.php");
 					<textarea type="text" class="form-control" id="txtContent" name="txtContent" rows="3"></textarea>
 				</div>
 
-				<!-- <label for="txtContent">Content</label><br />
-				<textarea id="txtContent" name="txtContent" rows="4" cols="50"></textarea> -->
 				<br /><br />
 
 				<label><strong>Categories</strong></label><br />

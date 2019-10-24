@@ -41,14 +41,15 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword'])) {
 	}
 }
 
-// If we get to this point without having redirected, then it means they
-// should just see the login form.
 ?>
 
 <!DOCTYPE html>
 <html>
 
 <head>
+	<?php
+	include('./common/head.php');
+	?>
 	<title>Sign In</title>
 </head>
 
@@ -57,25 +58,31 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword'])) {
 
 		<?php
 		if ($badLogin) {
-			echo "Incorrect username or password!<br /><br />\n";
+			echo "<div class='alert alert-danger' role='alert'>  <p>Incorrect username or password!</p></div><br /><br />\n";
 		}
 		?>
 
-		<h1>Please sign in below:</h1>
+		<div class="card" style="width: 18rem;">
+			<div class="card-body">
+				<h1 class="card-title">Please sign in below:</h1>
 
-		<form id="mainForm" action="signIn.php" method="POST">
+				<form id="mainForm" action="signIn.php" method="POST">
 
-			<input type="text" id="txtUser" name="txtUser" placeholder="Username">
-			<label for="txtUser">Username</label>
-			<br /><br />
+					<label for="txtUser"><strong>Username</strong></label>
+					<input type="text" class="form-control" id="txtUser" name="txtUser" placeholder="Username">
+					<br /><br />
 
-			<input type="password" id="txtPassword" name="txtPassword" placeholder="Password">
-			<label for="txtPassword">Password</label>
-			<br /><br />
+					<label for="txtPassword"><strong>Password</strong></label>
 
-			<input type="submit" value="Sign In" />
+					<input type="password" class="form-control" id="txtPassword" name="txtPassword" placeholder="Password">
+					<br /><br />
 
-		</form>
+					<input type="submit" class="card-link" value="Sign In" />
+
+				</form>
+			</div>
+		</div>
+
 
 		<br /><br />
 
