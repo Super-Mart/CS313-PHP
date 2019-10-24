@@ -25,3 +25,13 @@ textarea#txtContent {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
+th,
+strong {
+  font-size: 1.3em;
+}
+
+td,
+.chkBox {
+  font-size: 1.1em;
+}
