@@ -8,12 +8,12 @@ include("./library/functions.php");
 	<?php
 	include('./common/head.php');
 	?>
-	<title>Notes</title>
+	<title>New Entry</title>
 </head>
 
 <body>
 	<nav class="navbar navbar-dark bg-primary pl-5 pr-5">
-		<a class="navbar-brand" href="./index.php">Notes</a>
+		<a class="navbar-brand" href="./showTopics.php">Notes</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -32,21 +32,39 @@ include("./library/functions.php");
 			include('./common/header.php');
 			?>
 
-			<table class="table table-hover">
-				<thead>
-					<tr>
-						<th scope="col">Note Title</th>
-						<th scope="col">Note Description</th>
-						<th scope="col">Category</th>
-					</tr>
-				</thead>
-				<tbody>
-					<?php load_notes();	?>
-				</tbody>
+			<form id="mainForm" action="insertNote.php" method="POST">
 
-			</table>
+				<div class="form-group mt-3">
+					<label for="txtTitle"><strong>Title</strong></label>
+					<input type="text" class="form-control" id="txtTitle" name="txtTitle">
+				</div>
+				<!-- 
+				<label for="txtTitle" class="mt-3"><strong>Title</strong></label>
+				<input type="text" class="form-control" id="txtTitle" name="txtTitle"> -->
 
-			<a href="./topicEntry.php" class="btn btn-primary">Add New Note</a>
+				<br /><br />
+
+				<div class="form-group mt-3">
+					<label for="txtContent"><strong>Content</strong></label>
+					<textarea type="text" class="form-control" id="txtContent" name="txtContent" rows="3"></textarea>
+				</div>
+
+				<!-- <label for="txtContent">Content</label><br />
+				<textarea id="txtContent" name="txtContent" rows="4" cols="50"></textarea> -->
+				<br /><br />
+
+				<label><strong>Categories</strong></label><br />
+
+				<?php load_categories(); ?>
+
+				<br />
+
+				<a href="./showTopics.php" class="btn btn-primary">Back</a>
+				<input type="submit" class="btn btn-success" value="Add Note" />
+
+			</form>
+
+
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
