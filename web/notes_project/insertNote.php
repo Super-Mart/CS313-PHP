@@ -48,6 +48,6 @@ try {
 }
 
 // finally, redirect them to a new page to actually show the topics
-header("Location: ./showNotes.php");
+header("Location: showNotes.php");
 
 die();
