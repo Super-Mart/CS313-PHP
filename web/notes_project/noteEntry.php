@@ -59,7 +59,7 @@ include("./library/functions.php");
 
 				<br />
 
-				<a href="./showTopics.php" class="btn btn-primary">Back</a>
+				<a href="./showNotes.php" class="btn btn-primary">Back</a>
 				<input type="submit" class="btn btn-success" value="Add Note" />
 
 			</form>
