@@ -34,12 +34,23 @@ include("./library/functions.php");
 
 			<form id="mainForm" action="insertTopic.php" method="POST">
 
-				<input type="text" id="txtTitle" name="txtTitle" />
-				<label for="txtTitle">Title</label>
+				<div class="form-group mt-3">
+					<label for="txtTitle"><strong>Title</strong></label>
+					<input type="text" class="form-control" id="txtTitle" name="txtTitle">
+				</div>
+				<!-- 
+				<label for="txtTitle" class="mt-3"><strong>Title</strong></label>
+				<input type="text" class="form-control" id="txtTitle" name="txtTitle"> -->
+
 				<br /><br />
 
-				<label for="txtContent">Content</label><br />
-				<textarea id="txtContent" name="txtContent" rows="4" cols="50"></textarea>
+				<div class="form-group mt-3">
+					<label for="txtContent"><strong>Content</strong></label>
+					<textarea type="text" class="form-control" id="txtContent" name="txtContent" rows="3"></textarea>
+				</div>
+
+				<!-- <label for="txtContent">Content</label><br />
+				<textarea id="txtContent" name="txtContent" rows="4" cols="50"></textarea> -->
 				<br /><br />
 
 				<label>Categories:</label><br />
@@ -48,7 +59,8 @@ include("./library/functions.php");
 
 				<br />
 
-				<input type="submit" value="Add to Database" />
+				<a href="./showTopics.php" class="btn btn-primary">Back</a>
+				<input type="submit" class="btn btn-success" value="Add Note" />
 
 			</form>
 
