@@ -36,7 +36,6 @@ include("./library/functions.php");
 	<div>
 
 		<div class="container-fluid p-5">
-			<?php echo '<h2>Welcome' . $username . '</h2>' ?>
 			<?php
 			include('./common/header.php');
 			?>
