@@ -11,7 +11,7 @@ CREATE TABLE login
 
 
 -- Create a user for this activity and grant it permission to this table
-CREATE USER ta_user WITH PASSWORD 'ta_pass';
+CREATE USER s_user WITH PASSWORD 's_pass';
 
-GRANT SELECT, INSERT, UPDATE ON login TO ta_user;
-GRANT USAGE, SELECT ON login_id_seq TO ta_user;
+GRANT SELECT, INSERT, UPDATE ON login TO s_user;
+GRANT USAGE, SELECT ON login_id_seq TO s_user;
