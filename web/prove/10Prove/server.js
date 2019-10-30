@@ -7,17 +7,11 @@ const app = express();
 const {
 	Pool
 } = require("pg"); // This is the postgres database connection module.
+const connectionString = process.env.DATABASE_URL || "postgres://elwihpozkimbmz:3d328ea38261b632db7ab7ae4292046963a1bb7bb2acb5c84dad1767cc15b1c7@ec2-107-21-102-221.compute-1.amazonaws.com:5432/d1bt2644oalhh2?ssl=true";
 
-// This says to use the connection string from the environment variable, if it is there,
-// otherwise, it will use a connection string that refers to a local postgres DB
-
-
-// Establish a new connection to the data source specified the connection string.
 const pool = new Pool({
 	connectionString: connectionString
 });
-
-
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
