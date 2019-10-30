@@ -1,17 +1,41 @@
 const express = require('express');
 const app = express();
-
+//require('dotenv').config();
 
 // Following the "Single query" approach from: https://node-postgres.com/features/pooling#single-query
 
 const {
 	Pool
 } = require("pg"); // This is the postgres database connection module.
-const connectionString = process.env.DATABASE_URL || "postgres://elwihpozkimbmz:3d328ea38261b632db7ab7ae4292046963a1bb7bb2acb5c84dad1767cc15b1c7@ec2-107-21-102-221.compute-1.amazonaws.com:5432/d1bt2644oalhh2?ssl=true";
 
+// This says to use the connection string from the environment variable, if it is there,
+// otherwise, it will use a connection string that refers to a local postgres DB
+const connectionString = process.env.DATABASE_URL || 'postgres://elwihpozkimbmz:3d328ea38261b632db7ab7ae4292046963a1bb7bb2acb5c84dad1767cc15b1c7@ec2-107-21-102-221.compute-1.amazonaws.com:5432/d1bt2644oalhh2?ssl=true';
+
+// Establish a new connection to the data source specified the connection string.
 const pool = new Pool({
 	connectionString: connectionString
 });
+
+
+// Test Connection
+// var sql = "SELECT * FROM note";
+
+// pool.query(sql, function (err, result) {
+// 	// If an error occurred...
+// 	if (err) {
+// 		console.log("Error in query: ");
+// 		console.log(err);
+// 	}
+
+// 	// Log this to the console for debugging purposes.
+// 	console.log("Back from DB with result:");
+// 	console.log(result.rows);
+
+
+// });
+
+
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
@@ -23,7 +47,6 @@ app.get('/getPerson', getPerson);
 app.listen(app.get('port'), function () {
 	console.log('Node app is running on port', app.get('port'));
 });
-
 
 // This function handles requests to the /getPerson endpoint
 // it expects to have an id on the query string, such as: http://localhost:5000/getPerson?id=1
@@ -50,7 +73,6 @@ function getPerson(request, response) {
 		}
 	});
 }
-
 // This function gets a person from the DB.
 // By separating this out from the handler above, we can keep our model
 // logic (this function) separate from our controller logic (the getPerson function)
@@ -70,7 +92,7 @@ function getPersonFromDb(id, callback) {
 	pool.query(sql, params, function (err, result) {
 		// If an error occurred...
 		if (err) {
-			console.log("Error in query: ")
+			console.log("Error in query: ");
 			console.log(err);
 			callback(err, null);
 		}
@@ -87,4 +109,4 @@ function getPersonFromDb(id, callback) {
 		callback(null, result.rows);
 	});
 
-} // end of getPersonFromDb
+}
