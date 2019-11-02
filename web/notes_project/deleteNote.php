@@ -16,7 +16,7 @@ $db = get_db();
 try {
 
     // We do this by preparing the query with placeholder values
-    $nc_query = 'DELETE FROM note_category WHERE noteId = :id';
+    $nc_query = 'DELETE FROM note_category WHERE noteid = :id';
     $statement = $db->prepare($query);
 
 
