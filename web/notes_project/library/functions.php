@@ -89,7 +89,7 @@ function load_cats()
             $name = $row['name'];
 
             // Notice that we want the value of the checkbox to be the id of the label
-            echo "<ol><li>$name</li></ol>";
+            echo "<li>$name</li>";
         }
     } catch (PDOException $ex) {
         // Please be aware that you don't want to output the Exception message in

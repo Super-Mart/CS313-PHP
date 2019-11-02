@@ -31,14 +31,13 @@ include("./library/functions.php");
             <form id="mainForm" action="insertNote.php" method="POST">
 
 
-                <label><strong>Categories</strong></label><br />
-
-                <?php load_cats(); ?>
-
+                <h2><strong>Categories</strong></h2><br />
+                <ol>
+                    <?php load_cats(); ?>
+                </ol>
                 <br />
 
                 <a href="./showNotes.php" class="btn btn-primary mr-3">Back</a>
-                <input type="submit" class="btn btn-success" value="Add Note" />
 
             </form>
 
