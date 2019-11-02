@@ -3,9 +3,9 @@
         <a class="nav-link" href="./showTopics.php">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="./topicEntry.php">New Entry</a>
+        <a class="nav-link" href="./topicEntry.php">New Note</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="./signOut.php">New Entry</a>
+        <a class="nav-link" href="./signOut.php">Sign Out</a>
     </li>
 </ul>

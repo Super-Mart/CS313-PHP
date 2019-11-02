@@ -66,7 +66,7 @@ if (isset($_SESSION['loggedIn'])) {
 
 					</table>
 				</div>
-				<a href="./signOut.php" class="btn btn-secondary">Sign Out</a>
+				<a href="./signOut.php" class="btn btn-secondary mr-3">Sign Out</a>
 				<a href="./noteEntry.php" class="btn btn-primary">Add New Note</a>
 			</div>
 		</div>

@@ -13,7 +13,7 @@ include("./library/functions.php");
 
 <body>
 	<nav class="navbar navbar-dark bg-primary pl-5 pr-5">
-		<a class="navbar-brand" href="./showTopics.php">Notes</a>
+		<a class="navbar-brand" href="./showNotes.php">Notes</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -54,7 +54,7 @@ include("./library/functions.php");
 
 				<br />
 
-				<a href="./showNotes.php" class="btn btn-primary">Back</a>
+				<a href="./showNotes.php" class="btn btn-primary mr-3">Back</a>
 				<input type="submit" class="btn btn-success" value="Add Note" />
 
 			</form>
