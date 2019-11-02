@@ -31,6 +31,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword'])) {
 		if (password_verify($password, $hashedPasswordFromDB)) {
 			// password was correct, put the user on the session, and redirect to home
 			$_SESSION['username'] = $username;
+			$_SESSION['loggedIn'] = TRUE;
 			header("Location: showNotes.php");
 			die(); // we always include a die after redirects.
 		} else {

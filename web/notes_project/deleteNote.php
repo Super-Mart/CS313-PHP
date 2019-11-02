@@ -3,7 +3,7 @@
 // get the data from the POST
 $id = $_GET['id'];
 
-var_dump($id);
+// var_dump($id);
 
 
 
@@ -25,7 +25,7 @@ try {
     $statement->execute();
 
     $rowsChanged = $statement->rowCount();
-    var_dump($statement);
+    // var_dump($statement);
     $statement->closeCursor();
 
 
@@ -40,8 +40,8 @@ try {
 
     $rowsChanged = $statement->rowCount();
 
-    var_dump($statement);
-    exit;
+    // var_dump($statement);
+    // exit;
 
     $statement->closeCursor();
 } catch (Exception $ex) {
