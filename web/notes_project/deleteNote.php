@@ -16,13 +16,12 @@ $db = get_db();
 try {
 
     // We do this by preparing the query with placeholder values
+    $query = 'DELETE FROM note_category WHERE noteId = :id';
+
     $query = 'DELETE FROM note WHERE id = :id';
     $statement = $db->prepare($query);
 
 
-
-    // Now we bind the values to the placeholders. This does some nice things
-    // including sanitizing the input with regard to sql commands.
     $statement->bindValue(':id', $id);
 
     $statement->execute();
