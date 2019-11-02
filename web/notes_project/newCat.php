@@ -36,7 +36,7 @@ include("./library/functions.php");
 
                 <div class="form-group mt-3">
                     <label for="txtCategory"><strong>New Category</strong></label>
-                    <input type="text" class="form-control" id="txtTitle" name="txtTitle">
+                    <input type="text" class="form-control" id="txtCategory" name="txtCategory">
                 </div>
 
                 <br /><br />

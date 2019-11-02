@@ -66,10 +66,10 @@ if (isset($_SESSION['loggedIn'])) {
 
 					</table>
 				</div>
-				<a href="./signOut.php" class="btn btn-secondary mr-3">Sign Out</a>
-				<div class="spacer"></div>
-				<a href="./noteEntry.php" class="btn btn-primary">Add New Note</a>
-				<a href="./newCat.php" class="btn btn-primary">Add New Category</a>
+				<a href="./signOut.php" class="btn btn-secondary btn-sm  mr-3">Sign Out</a>
+				<!-- <div class="spacer"></div> -->
+				<a href="./noteEntry.php" class="btn btn-primary btn-sm  mr-3">Add New Note</a>
+				<a href="./newCat.php" class="btn btn-primary btn-sm ">Add New Category</a>
 
 			</div>
 		</div>
