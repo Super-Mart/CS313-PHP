@@ -3,6 +3,9 @@
 // get the data from the POST
 $id = $_GET['id'];
 
+var_dump($id);
+
+
 
 // echo "title=$title\n";
 // echo "content=$content\n";
@@ -16,6 +19,8 @@ try {
     $query = 'SELECT FROM note WHERE id = :id';
     $statement = $db->prepare($query);
 
+
+
     // Now we bind the values to the placeholders. This does some nice things
     // including sanitizing the input with regard to sql commands.
     $statement->bindValue(':id', $id);
@@ -23,6 +28,9 @@ try {
     $statement->execute();
 
     $rowsChanged = $statement->rowCount();
+
+    var_dump($statement);
+    exit;
 
     $statement->closeCursor();
 } catch (Exception $ex) {
