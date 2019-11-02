@@ -17,6 +17,14 @@ textarea#txtContent {
 
 }
 
+li {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
 .sign-in {
   display: -webkit-box;
   display: -ms-flexbox;
