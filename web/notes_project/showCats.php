@@ -32,9 +32,9 @@ include("./library/functions.php");
 
 
                 <h2><strong>Categories</strong></h2><br />
-                <li>
+                <ul>
                     <?php load_cats(); ?>
-                </li>
+                </ul>
                 <br />
 
                 <a href="./showNotes.php" class="btn btn-primary mr-3">Back</a>
