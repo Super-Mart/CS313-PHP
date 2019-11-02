@@ -88,8 +88,7 @@ function load_cats()
             $id = $row['id'];
             $name = $row['name'];
 
-            // Notice that we want the value of the checkbox to be the id of the label
-            echo '<a href="deleteCat.php?id="' . $id . '"><li>$name</li></a>"';
+            echo '<a href=deleteCat.php?id="' . $id . '"><li>"' . $name . '"</li></a>"';
         }
     } catch (PDOException $ex) {
         // Please be aware that you don't want to output the Exception message in
