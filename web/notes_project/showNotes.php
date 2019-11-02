@@ -50,22 +50,22 @@ if (isset($_SESSION['loggedIn'])) {
 								?>
 					</h4>
 				</div>
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Note Title</th>
+								<th scope="col">Note Description</th>
+								<th scope="col">Category</th>
+								<th scope="col">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php load_notes();	?>
+						</tbody>
 
-				<table class="table table-hover table-responsive">
-					<thead>
-						<tr>
-							<th scope="col">Note Title</th>
-							<th scope="col">Note Description</th>
-							<th scope="col">Category</th>
-							<th scope="col">Action</th>
-						</tr>
-					</thead>
-					<tbody>
-						<?php load_notes();	?>
-					</tbody>
-
-				</table>
-
+					</table>
+				</div>
 				<a href="./signOut.php" class="btn btn-secondary">Sign Out</a>
 				<a href="./noteEntry.php" class="btn btn-primary">Add New Note</a>
 			</div>
