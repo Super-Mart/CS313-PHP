@@ -16,7 +16,7 @@ $db = get_db();
 try {
 
     // We do this by preparing the query with placeholder values
-    $query = 'SELECT FROM note WHERE id = :id';
+    $query = 'DELETE FROM note WHERE id = :id';
     $statement = $db->prepare($query);
 
 
