@@ -29,7 +29,7 @@ function load_notes()
                 echo '<ul><li>' . $categoryRow['name'] . '</li></ul>';
             }
 
-            echo '</td></tr>';
+            echo '</td><button id="delete">Delete</button></tr>';
         }
     } catch (PDOException $ex) {
         echo "Error with DB. Details: $ex";
