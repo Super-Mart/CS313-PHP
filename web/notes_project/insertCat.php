@@ -12,7 +12,7 @@ $db = get_db();
 try {
 
     // We do this by preparing the query with placeholder values
-    $query = 'INSERT INTO category(name) VALUES(:name)';
+    $query = 'INSERT INTO category("name") VALUES(:name)';
     $statement = $db->prepare($query);
 
     // Now we bind the values to the placeholders. This does some nice things

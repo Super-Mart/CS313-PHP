@@ -6,7 +6,7 @@
         <a class="nav-link" href="./topicEntry.php">New Note</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="./noteCat.php">New Category</a>
+        <a class="nav-link" href="./newCat.php">New Category</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="./signOut.php">Sign Out</a>

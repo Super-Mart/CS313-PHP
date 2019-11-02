@@ -69,7 +69,7 @@ if (isset($_SESSION['loggedIn'])) {
 				<a href="./signOut.php" class="btn btn-secondary mr-3">Sign Out</a>
 				<div class="spacer"></div>
 				<a href="./noteEntry.php" class="btn btn-primary">Add New Note</a>
-				<a href="./noteCat.php" class="btn btn-primary">Add New Category</a>
+				<a href="./newCat.php" class="btn btn-primary">Add New Category</a>
 
 			</div>
 		</div>
