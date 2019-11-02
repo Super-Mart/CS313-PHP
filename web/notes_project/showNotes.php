@@ -68,8 +68,8 @@ if (isset($_SESSION['loggedIn'])) {
 				</div>
 				<a href="./signOut.php" class="btn btn-warning btn-sm  mr-3">Sign Out</a>
 				<!-- <div class="spacer"></div> -->
-				<a href="./noteEntry.php" class="btn btn-light btn-sm  mr-3">Add New Note</a>
-				<a href="./newCat.php" class="btn btn-light btn-sm ">Add New Category</a>
+				<a href="./noteEntry.php" class="btn btn-success btn-sm  mr-3">Add New Note</a>
+				<a href="./newCat.php" class="btn btn-success btn-sm ">Add New Category</a>
 
 			</div>
 		</div>

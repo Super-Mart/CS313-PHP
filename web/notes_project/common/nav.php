@@ -9,6 +9,9 @@
         <a class="nav-link" href="./newCat.php">New Category</a>
     </li>
     <li class="nav-item">
+        <a class="nav-link" href="./showCats.php">View Categories</a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="./signOut.php">Sign Out</a>
     </li>
 </ul>
