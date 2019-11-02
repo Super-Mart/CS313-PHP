@@ -51,12 +51,13 @@ if (isset($_SESSION['loggedIn'])) {
 					</h4>
 				</div>
 
-				<table class="table table-hover">
+				<table class="table table-hover table-responsive">
 					<thead>
 						<tr>
 							<th scope="col">Note Title</th>
 							<th scope="col">Note Description</th>
 							<th scope="col">Category</th>
+							<th scope="col">Action</th>
 						</tr>
 					</thead>
 					<tbody>
