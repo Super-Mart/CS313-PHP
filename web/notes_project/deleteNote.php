@@ -17,7 +17,7 @@ try {
 
     // We do this by preparing the query with placeholder values
     $nc_query = 'DELETE FROM note_category WHERE noteid = :id';
-    $statement = $db->prepare($query);
+    $statement = $db->prepare($nc_query);
 
 
     $statement->bindValue(':id', $id);
@@ -31,7 +31,7 @@ try {
 
 
     $n_query = 'DELETE FROM note WHERE id = :id';
-    $statement = $db->prepare($query);
+    $statement = $db->prepare($n_query);
 
 
     $statement->bindValue(':id', $id);
