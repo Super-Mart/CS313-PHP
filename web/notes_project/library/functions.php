@@ -29,7 +29,7 @@ function load_notes()
                 echo '<ul><li>' . $categoryRow['name'] . '</li></ul>';
             }
 
-            echo '</td><td><a href="deleteNote.php?id=' . $row['id'] . '"><button class="btn btn-danger btn-sm"id="delete">Delete</button></a></td></tr>';
+            echo '</td><td><a href="deleteNote.php?id=' . $row['id'] . '"><button class="btn btn-danger btn-sm" id="delete">Delete</button></a></td></tr>';
         }
     } catch (PDOException $ex) {
         echo "Error with DB. Details: $ex";
@@ -89,7 +89,7 @@ function load_cats()
             $name = $row['name'];
 
             // Notice that we want the value of the checkbox to be the id of the label
-            echo "<li>$name</li>";
+            echo '<a href="deleteCat.php?id="' . $id . '"><li>"' . $name . '"</li></a>"';
         }
     } catch (PDOException $ex) {
         // Please be aware that you don't want to output the Exception message in
