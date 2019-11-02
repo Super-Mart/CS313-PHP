@@ -11,10 +11,6 @@ h2 {
   font-weight: 600;
 }
 
-ol {
-  list-style: none;
-}
-
 input#txtTitle,
 textarea#txtContent {
   width: 50%;
