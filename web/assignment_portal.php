@@ -79,6 +79,12 @@
               <h3>Notes</h3>
             </a>
           </div>
+          <div class="card">
+            <a href="./prove/09Prove/index.js">
+              <img src="./images/assignment.png" alt="Assignment Logo" />
+              <h3>Week 9 - Postal Calculator</h3>
+            </a>
+          </div>
         </div>
     </section>
   </main>
