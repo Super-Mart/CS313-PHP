@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h3>Estimated cost of package delivery with the weight of <%= weight %> oz and mailing as a <%= name %> is: $
+          <%= rate %>
+        </h3>
+        <p class="lead">Prices are <u>NOT</u> 100% accurate. Please use only for estimates.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

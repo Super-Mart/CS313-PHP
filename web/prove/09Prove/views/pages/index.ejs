@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to the <u>UNOFFICIAL</u> Postal Rate Calculator</h1>
+        <p class="lead">Prices are <u>NOT</u> 100% accurate. Please use only for estimates.</p>
+      </div>
+    </div>
+
+    <form action="rate" method="POST">
+      <div class="row">
+        <div class="col">
+          <label for="weight">Estimated Weight (OZ)</label>
+          <input type="text" class="form-control" pattern="\d+(\.\d{1,2})?" name="weight" id="weight" required>
+        </div>
+        <div class="col">
+          <label for="mail">Mail type</label>
+          <select name="mail" class="form-control" required>
+            <option value=" " selected disabled>Choose...</option>
+            <option value="stamped"> Letters (Stamped)</option>
+            <option value="metered"> Letters (Metered)</option>
+            <option value="flats"> Large Envelopes (Flats)</option>
+            <option value="parcels"> Parcels</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" class="btn btn-primary mt-4" value="Submit">
+    </form>
+
+  </div>
+  <% include ../partials/scripts.ejs %>
+</body>
+
+</html>
