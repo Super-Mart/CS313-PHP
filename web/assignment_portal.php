@@ -80,7 +80,7 @@
             </a>
           </div>
           <div class="card">
-            <a href="./prove/09Prove/index.js">
+            <a href="./prove/09Prove">
               <img src="./images/assignment.png" alt="Assignment Logo" />
               <h3>Week 9 - Postal Calculator</h3>
             </a>
